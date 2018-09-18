@@ -7,7 +7,7 @@ import OpenModal from "./modules/OpenModal";
 
 var mobileMenu = new MobileMenu();
 
-new RevealOnScroll($('.page-section'), '85%');
+new RevealOnScroll($('.row'), '85%');
 
 var stickyHeader = new StickyHeader();
 

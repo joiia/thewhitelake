@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+@font-face {font-family: 'Gilam-Regular';src: url('../../assets/assets/fonts/37960B_6_0.eot');src: url('../../assets/fonts/37960B_6_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_6_0.woff2') format('woff2'),url('../../assets/fonts/37960B_6_0.woff') format('woff'),url('../../assets/fonts/37960B_6_0.ttf') format('truetype');}
+
+@font-face {font-family: 'Gilam-Bold';src: url('../../assets/fonts/37960B_D_0.eot');src: url('../../assets/fonts/37960B_D_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_D_0.woff2') format('woff2'),url('../../assets/fonts/37960B_D_0.woff') format('woff'),url('../../assets/fonts/37960B_D_0.ttf') format('truetype');}
+ 
+@font-face {font-family: 'Gilam-Book';src: url('../../assets/fonts/37960B_E_0.eot');src: url('../../assets/fonts/37960B_E_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_E_0.woff2') format('woff2'),url('../../assets/fonts/37960B_E_0.woff') format('woff'),url('../../assets/fonts/37960B_E_0.ttf') format('truetype');}
+ 
+@font-face {font-family: 'Gilam-BookItalic';src: url('../../assets/fonts/37960B_10_0.eot');src: url('../../assets/fonts/37960B_10_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_10_0.woff2') format('woff2'),url('../../assets/fonts/37960B_10_0.woff') format('woff'),url('../../assets/fonts/37960B_10_0.ttf') format('truetype');}

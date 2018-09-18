@@ -1,0 +1,24 @@
+
+
+
+        .icon {
+            background-image: url('../../assets/images/sprites/sprite-0127a930.svg');
+        }
+
+        .no-svg .icon {
+            background-image: url('../../assets/images/sprites/sprite-0127a930.png');
+        }
+
+        
+
+    .icon--comments {
+        width: 14px; 
+        height: 13px;
+        background-position: 0 100%;  
+    }
+
+    .icon--views {
+        width: 17px; 
+        height: 12px;
+        background-position: 0 0;  
+    }

@@ -1,12 +1,18 @@
 .headline {
     
+    font-family: $play;
+    font-size: 50px;
+    line-height: 1;
+    
     @mixin atS {} 
     
     &--centered {
         text-align: center;
     }
     
-    &--small {
+    &--s {
+        font-size: 25px;
+        line-height: 28px;
     }
     
     &--narrow {
@@ -19,7 +25,7 @@
         font-weight: 100;
     }
     
-    &--mrg-b-sm {
+    &--mrg-b-s {
         margin-bottom: .5em;
     }
     

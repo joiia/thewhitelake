@@ -1,8 +1,36 @@
 body {
-    
+    background: #fff;
+    margin: 40px 20px;
+    min-height: 100vh;
+    position: relative;
+    font-family: $light;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.row {
+    margin: 0 -10px;
+}
+
+[class*="col-"] {
+    padding: 0 10px;
+}
+
+.right {
+    text-align: right;
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
 }

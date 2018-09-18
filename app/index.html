@@ -1,69 +1,269 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    
-    <!-- build:css assets/styles/styles.css -->
-    <link rel="stylesheet" href="temp/styles/styles.css">
-    <!-- endbuild -->
-    
-    <!-- build:js assets/scripts/Vendor.js -->
-    <script src="temp/scripts/Vendor.js"></script>
-    <!-- endbuild -->
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
 
-<body>
-   
-    <header class="site-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">logo</div>
-                <div class="col-8">
-                    <div class="primary-nav primary-nav--pull-right">
-                        <ul>
-                            <li>One</li>
-                            <li>Two</li>
-                            <li>Three</li>
-                            <li>Four</li>
-                        </ul>
+        <!-- build:css assets/styles/styles.css -->
+        <link rel="stylesheet" href="temp/styles/styles.css">
+        <!-- endbuild -->
+
+        <!-- build:js assets/scripts/Vendor.js -->
+        <script src="temp/scripts/Vendor.js"></script>
+        <!-- endbuild -->
+    </head>
+
+    <body>
+
+        <header class="site-header">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-1 col-fixed--73">
+                        <div class="site-header__logo">
+                            <a href="#" class=""></a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-8">
+                        <div class="site-header__menu primary-nav">
+                            <ul>
+                                <li class="current-menu-item"><a href="">Все</a></li>
+                                <li><a href="">Истории</a></li>
+                                <li><a href="">Путешествия</a></li>
+                                <li><a href="">Вдохновение</a></li>
+                                <li><a href="">Места</a></li>
+                                <li><a href="">Тренды</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-3 right">
+                        <div class="site-header__links">
+                            <div class="site-header__link site-header__search">
+                                <div class="link">Поиск</div>
+                            </div>
+                            <div class="site-header__link site-header__ads">
+                                <a class="btn btn--transparent">Реклама</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    
-    <div id="sectionID" class="page-section" data-matching-link="sectionID">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    Main section
+        </header>
+
+        <div id="main-page" class="page">
+
+            <div class="page-section feed">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col-12 col-md-6"> 
+                            <div class="feed-item feed-item--l">
+                                <a href="">
+                                    <div class="feed-item__img"><img src="../assets/images/1.jpg" alt=""></div>
+                                    <div class="feed-item__text">
+                                        <div class="feed-item__counters">
+                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                            </div>
+                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                            </div>
+                                        </div>
+                                        <h1 class="feed-item__title headline">Гастрономическое путешествие по Италии</h1> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col col-12 col-md-6">
+                            <div class="row">
+                                <div class="col col-12 col-md-6">
+                                    <div class="feed-item">
+                                        <a href="">
+                                            <div class="feed-item__img"><img src="../assets/images/2.jpg" alt=""></div>
+                                            <div class="feed-item__text">
+                                                <div class="feed-item__counters">
+                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                    </div>
+                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                    </div>
+                                                </div>
+                                                <h3 class="feed-item__title headline headline--s">Кто главный по смузи в России?</h3> 
+                                            </div>
+                                            <div class="feed-item__label">Партнерский материал</div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col col-12 col-md-6">
+                                    <div class="feed-item">
+                                        <a href="">
+                                            <div class="feed-item__img"><img src="../assets/images/3.jpg" alt=""></div>
+                                            <div class="feed-item__text">
+                                                <div class="feed-item__counters">
+                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>642
+                                                    </div>
+                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>0
+                                                    </div>
+                                                </div>
+                                                <h3 class="feed-item__title headline headline--s">Скандинавский стиль в интерьере</h3> 
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col col-12 col-md-6">
+                                    <div class="feed-item">
+                                        <a href="">
+                                            <div class="feed-item__img"><img src="../assets/images/4.jpg" alt=""></div>
+                                            <div class="feed-item__text">
+                                                <div class="feed-item__counters">
+                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                    </div>
+                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                    </div>
+                                                </div>
+                                                <h3 class="feed-item__title headline headline--s">Путевые заметки. Минск</h3> 
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col col-12 col-md-6">
+                                    <div class="feed-item">
+                                        <a href="">
+                                            <div class="feed-item__img"><img src="../assets/images/5.jpg" alt=""></div>
+                                            <div class="feed-item__text">
+                                                <div class="feed-item__counters">
+                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                    </div>
+                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                    </div>
+                                                </div>
+                                                <h3 class="feed-item__title headline headline--s">Cтабильность на приключения </h3> 
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-12 col-md-6">
+                            <div class="row">
+                                <div class="col col-12 col-md-6">
+                                    <div class="feed-item">
+                                        <a href="">
+                                            <div class="feed-item__img"><img src="../assets/images/2.jpg" alt=""></div>
+                                            <div class="feed-item__text">
+                                                <div class="feed-item__counters">
+                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                    </div>
+                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                    </div>
+                                                </div>
+                                                <h3 class="feed-item__title headline headline--s">Кто главный по смузи в России?</h3> 
+                                            </div>
+                                            <div class="feed-item__label">Партнерский материал</div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col col-12 col-md-6">
+                                    <div class="feed-item">
+                                        <a href="">
+                                            <div class="feed-item__img"><img src="../assets/images/3.jpg" alt=""></div>
+                                            <div class="feed-item__text">
+                                                <div class="feed-item__counters">
+                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>642
+                                                    </div>
+                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>0
+                                                    </div>
+                                                </div>
+                                                <h3 class="feed-item__title headline headline--s">Скандинавский стиль в интерьере</h3> 
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col col-12 col-md-6">
+                                    <div class="feed-item">
+                                        <a href="">
+                                            <div class="feed-item__img"><img src="../assets/images/4.jpg" alt=""></div>
+                                            <div class="feed-item__text">
+                                                <div class="feed-item__counters">
+                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                    </div>
+                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                    </div>
+                                                </div>
+                                                <h3 class="feed-item__title headline headline--s">Путевые заметки. Минск</h3> 
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col col-12 col-md-6">
+                                    <div class="feed-item">
+                                        <a href="">
+                                            <div class="feed-item__img"><img src="../assets/images/5.jpg" alt=""></div>
+                                            <div class="feed-item__text">
+                                                <div class="feed-item__counters">
+                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                    </div>
+                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                    </div>
+                                                </div>
+                                                <h3 class="feed-item__title headline headline--s">Cтабильность на приключения </h3> 
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col col-12 col-md-6"> 
+                            <div class="feed-item feed-item--l">
+                                <a href="">
+                                    <div class="feed-item__img"><img src="../assets/images/1.jpg" alt=""></div>
+                                    <div class="feed-item__text">
+                                        <div class="feed-item__counters">
+                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                            </div>
+                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                            </div>
+                                        </div>
+                                        <h1 class="feed-item__title headline">Гастрономическое путешествие по Италии</h1> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+
         </div>
-    </div>
-    
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    footer
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        footer
+                    </div>
                 </div>
             </div>
+        </footer>
+
+        <div class="modal">
+            <div class="modal__inner">
+            </div>
+            <div class="modal__close">X</div>
         </div>
-    </footer>
-    
-    <div class="modal">
-        <div class="modal__inner">
-        </div>
-        <div class="modal__close">X</div>
-    </div>
-    
-    <!-- build:js assets/scripts/App.js -->
-    <script src="temp/scripts/App.js"></script>
-    <!-- endbuild -->
-    
-</body>
+
+        <!-- build:js assets/scripts/App.js -->
+        <script src="temp/scripts/App.js"></script>
+        <!-- endbuild -->
+
+    </body>
 
 </html>

@@ -1,4 +1,45 @@
 .site-header {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 23px;
+    padding-left: 37px;
+
+    &__logo {
+        background: url('../../assets/images/logo.svg');
+        width: 39px;
+        height: 54px;
+        margin: 0 auto;
+
+        a {
+            display: block;
+        }
+    }
+
+    &__menu {
+        padding-top: 18px;
+    }
+
+    &__link {
+        cursor: pointer;
+        padding-top: 18px;
+        color: #fff;
+        opacity: 0.5;
+        transition: all .5s;
+        display: inline-block;
+        &:hover {
+            opacity: 1;
+        }
+        
+        .btn {
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+    }
     
+    &__search {
+        padding-right: 25px;
+    }
 }
 
