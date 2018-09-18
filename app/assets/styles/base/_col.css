@@ -3,4 +3,8 @@
     &-fixed--73 {
         flex: 0 0 73px;
     }
+    
+    &-fixed--144 {
+        flex: 0 0 144px;
+    }
 }

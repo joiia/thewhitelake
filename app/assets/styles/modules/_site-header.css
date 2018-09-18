@@ -18,28 +18,41 @@
         }
     }
 
-    &__menu {
+    &__center {
+        display: flex;
         padding-top: 18px;
+        justify-content: space-between;
+        position: relative;
+        align-content: center;
+    }
+
+    &__menu {
+
+    }
+
+    &__search {
+        
     }
 
     &__link {
+        font-family: $regular;
         cursor: pointer;
         padding-top: 18px;
         color: #fff;
         opacity: 0.5;
         transition: all .5s;
         display: inline-block;
+        
         &:hover {
             opacity: 1;
         }
-        
+
         .btn {
+            height: 44px;
             border-color: rgba(255, 255, 255, 0.5);
         }
     }
-    
-    &__search {
-        padding-right: 25px;
-    }
+
+
 }
 

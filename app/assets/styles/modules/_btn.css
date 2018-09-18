@@ -4,10 +4,12 @@
     cursor: pointer;
     max-width: 100%;
     text-align: center;
-    line-height: 1;
+    line-height: 20px;
+    display: inline-block;
 
     &--l {
         font-size: 22px;
+        line-height: 1;
         padding: 26px 35px;
         width: 600px;
         font-family: $regular;
