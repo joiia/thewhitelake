@@ -5,22 +5,41 @@
     max-width: 100%;
     text-align: center;
     line-height: 1;
-    
+
     &--l {
         font-size: 22px;
         padding: 26px 35px;
         width: 600px;
         font-family: $regular;
     }
-    
+
     &--transparent {
         border: 1px solid #fff;
         color: #fff;
         border-radius: 3px; 
     }
-    
+
     &--sandy {
         background: $sandy;
         color: #fff;
+    }
+
+    &--load-more {
+        border-radius: 3px;
+        cursor: pointer;
+        max-width: 100%;
+        text-align: center;
+        line-height: 1;
+        background: $sandy;
+        color: #fff;
+        font-size: 22px;
+        padding: 26px 35px;
+        width: 600px;
+        font-family: $regular;
+        box-shadow: none;
+        border: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

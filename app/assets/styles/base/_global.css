@@ -6,6 +6,10 @@ body {
     font-family: $light;
 }
 
+a, input {
+    outline: none;
+}
+
 img {
     max-width: 100%;
     height: auto;

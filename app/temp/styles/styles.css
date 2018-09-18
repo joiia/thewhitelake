@@ -1775,6 +1775,8 @@ input[type="month"] {
     min-height: 100vh;
     position: relative;
     font-family: Gilam-Book;
+}a, input {
+    outline: none;
 }img {
     max-width: 100%;
     height: auto;
@@ -1819,6 +1821,24 @@ input[type="month"] {
     }.btn--sandy {
         background: #AE967B;
         color: #fff;
+    }.btn--load-more {
+        border-radius: 3px;
+        cursor: pointer;
+        max-width: 100%;
+        text-align: center;
+        line-height: 1;
+        background: #AE967B;
+        color: #fff;
+        font-size: 22px;
+        padding: 26px 35px;
+        width: 600px;
+        font-family: Gilam-Regular;
+        box-shadow: none;
+        border: none;
+        position: relative;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
     }.site-header {
     position: absolute;
     z-index: 10000;
