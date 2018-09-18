@@ -1,42 +1,45 @@
 .primary-nav {
     padding-left: 30px;
-    
+    font-family: $regular;
+
     ul {
         margin: 0;
         padding: 0;
     }
-    
+
     li {
         list-style: none;
         display: inline-block;
         padding-right: 7px;
-        
+
         @mixin atM {
             float: left;
             display: block;
             padding-right: 25px;
         }
     }
-    
+
     li:last-child {
         padding-right: 0;
         @mixin atM {
             padding-right: 20px;
         }
     }
-    
+
     a {
         text-decoration: none;
         color: #fff;
         opacity: 0.5;
         transition: all .5s;
-        
+
         &:hover {
             opacity: 1;
         }
     }
-    
+
     li.current-menu-item {
-        opacity: 1;
+        a {
+            opacity: 1;
+        }
     }
 }

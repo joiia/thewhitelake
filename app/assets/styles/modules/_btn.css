@@ -10,6 +10,7 @@
         font-size: 22px;
         padding: 26px 35px;
         width: 600px;
+        font-family: $regular;
     }
     
     &--transparent {

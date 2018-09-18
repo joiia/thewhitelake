@@ -1,6 +1,6 @@
 body {
     background: #fff;
-    margin: 40px 20px;
+    margin: 40px 30px;
     min-height: 100vh;
     position: relative;
     font-family: $light;
@@ -9,6 +9,11 @@ body {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.container-fluid {
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .row {
