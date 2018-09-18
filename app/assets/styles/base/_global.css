@@ -23,6 +23,11 @@ img {
     text-align: right;
 }
 
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
 .icon {
     display: inline-block;
     margin-right: 8px;

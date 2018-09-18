@@ -1784,6 +1784,9 @@ input[type="month"] {
     padding: 0 10px;
 }.right {
     text-align: right;
+}.center {
+    text-align: center;
+    justify-content: center;
 }.icon {
     display: inline-block;
     margin-right: 8px;
@@ -1798,9 +1801,20 @@ input[type="month"] {
     padding: 10px 35px;
     border-radius: 3px;
     cursor: pointer;
-}.btn--transparent {
+    max-width: 100%;
+    text-align: center;
+    line-height: 1;
+}.btn--l {
+        font-size: 22px;
+        padding: 26px 35px;
+        width: 600px;
+    }.btn--transparent {
         border: 1px solid #fff;
+        color: #fff;
         border-radius: 3px; 
+    }.btn--sandy {
+        background: #AE967B;
+        color: #fff;
     }.site-header {
     position: absolute;
     z-index: 10000;
@@ -1831,23 +1845,28 @@ input[type="month"] {
             border-color: rgba(255, 255, 255, 0.5);
         }.site-header__search {
         padding-right: 25px;
-    }.feed {
-    
-}.feed-item {
+    }.feed__container {
+        margin-bottom: 25px;
+    }.feed-item {
     position: relative;
     color: #fff;
     text-align: center;
     margin-bottom: 20px;
-    
-    
+    overflow: hidden;
+    border-radius: 3px;
+    height: 440px;
+
+
 
 
 }.feed-item a {
         color: #fff;
     }.feed-item__img {
         position: relative;
-        border-radius: 3px;
-        overflow: hidden;
+        height: 100%;
+
+
+
 
     }.feed-item__img:before {
             content: "";
@@ -1859,18 +1878,24 @@ input[type="month"] {
             height: 100%;
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
         }.feed-item__img img {
-            width: 100%;
-            height: auto;
-        }.feed-item__text {
+            height: 100% !important;
+            width: auto !important;
+        }@media (min-width: 1440px) {.feed-item__img img {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 1000px
+        }
+    }.feed-item__img img.img--gorisontal {
+                height: 100% !important;
+                width: auto !important;
+            }.feed-item__text {
         position: absolute;
-        bottom: 70px;
+        bottom: 64px;
         left: 50%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
         width: 100%;
-        padding: 45px;
-    }.feed-item__title {
-
+        padding: 0 45px;
     }.feed-item__counters {
         margin-bottom: 10px;
     }.feed-item__counter {
@@ -1899,9 +1924,13 @@ input[type="month"] {
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
         width: 178px;
+        line-height: 1;
     }.feed-item--l {
         height: 900px;
-    }.feed-item--l .feed-item__counters {
+
+    }.feed-item--l .feed-item__text {
+            bottom: 75px;
+        }.feed-item--l .feed-item__counters {
             margin-bottom: 6px;
         }.page-section {}.headline {
     

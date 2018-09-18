@@ -3,15 +3,17 @@
     color: #fff;
     text-align: center;
     margin-bottom: 20px;
-    
+    overflow: hidden;
+    border-radius: 3px;
+    height: 440px;
+
     a {
         color: #fff;
     }
 
     &__img {
         position: relative;
-        border-radius: 3px;
-        overflow: hidden;
+        height: 100%;
 
         &:before {
             content: "";
@@ -25,23 +27,33 @@
         }
 
         img {
-            width: 100%;
-            height: auto;
+            height: 100% !important;
+            width: auto !important;
+
+            @mixin atXXL {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 1000px;
+            }
+
+            &.img--gorisontal {
+                height: 100% !important;
+                width: auto !important;
+            }
         }
+
+
+
 
     }
 
     &__text {
         position: absolute;
-        bottom: 70px;
+        bottom: 64px;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        padding: 45px;
-    }
-
-    &__title {
-
+        padding: 0 45px;
     }
 
     &__counters {
@@ -68,7 +80,7 @@
             top: 2px;
         }
     }
-    
+
     &__label {
         background: $sandy;
         padding: 10px 15px;
@@ -79,17 +91,23 @@
         left: 50%;
         transform: translateX(-50%);
         width: 178px;
+        line-height: 1;
     }
 
     &--l {
         height: 900px;
 
+        .feed-item__text {
+            bottom: 75px;
+        }
+
         .feed-item__counters {
             margin-bottom: 6px;
         }
+
     }
-    
-    
+
+
 
 
 }

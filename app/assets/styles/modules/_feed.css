@@ -1,3 +1,5 @@
 .feed {
-    
+    &__container {
+        margin-bottom: 25px;
+    }
 }
