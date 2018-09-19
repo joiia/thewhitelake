@@ -2005,7 +2005,7 @@ input[type="month"] {
         margin-bottom: .5em;
     }.headline--mrg-b-n {
         margin-top: 0;
-    }.search__link {
+    }.search__link { 
         color: #fff;
         opacity: 0.5;
         transition: all .5s;
@@ -2014,34 +2014,39 @@ input[type="month"] {
         margin-right: 15px;
     }.search__link:hover {
             opacity: 1;
-        }.search__input-wrapper {
-        display: none;
-        position: absolute;
+        }.search__field {
+        opacity: 0;
+        z-index: -1;
         position: absolute;
         right: 0;
-        top: 18px;
+        top: 9px;
         width: 100%;
         height: 44px;
-    }.search__input {
+        transition: all .5s;
+    }.search__field--is-visible {
+            opacity: 1;
+            z-index: 1;
+        }.search__input {
         font-family: Gilam-Regular;
         font-size: 16px;
         color: #000;
         border: none;
         box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
         padding: 10px 20px;
+        width: 100%;
     }.search__close {
         position: absolute;
-        top: 40px;
+        top: 14px;
         right: 15px;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
         width: 18px;
         height: 18px;
+        cursor: pointer;
     }.search__results {
-        display: none;
+        opacity: 0;
+        z-index: -1;
         position: absolute;
         right: 0;
-        top: 67px;
+        top: 58px;
         width: 100%;
         background: #fff;
         border-radius: 3px;
@@ -2050,18 +2055,22 @@ input[type="month"] {
             padding: 0;
             margin: 0;
         }.search__results li {
-            padding: 20px;
+            padding: 0 20px;
             font-family: Gilam-Bold;
             font-size: 22px;
             line-height: 26px;
             list-style: none;
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }.search__results a {
+            padding: 20px 0;
             display: block;
             color: #000;
             text-decoration: none;
+        }.search__results--is-visible {
+            opacity: 1;
+            z-index: 1;
         }.search__result__date {
-            font-family: Gilam-Book;
+            font-family: Gilam-Regular;
             line-height: 24px;
             font-size: 16px;
             color: rgba(0, 0, 0, 0.25);

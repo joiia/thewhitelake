@@ -1,5 +1,5 @@
 .search {
-    &__link {
+    &__link { 
         color: #fff;
         opacity: 0.5;
         transition: all .5s;
@@ -12,14 +12,20 @@
         }
     }
     
-    &__input-wrapper {
-        display: none;
-        position: absolute;
+    &__field {
+        opacity: 0;
+        z-index: -1;
         position: absolute;
         right: 0;
-        top: 18px;
+        top: 9px;
         width: 100%;
         height: 44px;
+        transition: all .5s;
+        
+        &--is-visible {
+            opacity: 1;
+            z-index: 1;
+        }
     }
     
     &__input {
@@ -29,22 +35,24 @@
         border: none;
         box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
         padding: 10px 20px;
+        width: 100%;
     }
     
     &__close {
         position: absolute;
-        top: 40px;
+        top: 14px;
         right: 15px;
-        transform: translateY(-50%);
         width: 18px;
         height: 18px;
+        cursor: pointer;
     }
 
     &__results {
-        display: none;
+        opacity: 0;
+        z-index: -1;
         position: absolute;
         right: 0;
-        top: 67px;
+        top: 58px;
         width: 100%;
         background: #fff;
         border-radius: 3px;
@@ -56,7 +64,7 @@
         }
 
         li {
-            padding: 20px;
+            padding: 0 20px;
             font-family: $bold;
             font-size: 22px;
             line-height: 26px;
@@ -65,15 +73,21 @@
         }
 
         a {
+            padding: 20px 0;
             display: block;
             color: #000;
             text-decoration: none;
+        }
+        
+        &--is-visible {
+            opacity: 1;
+            z-index: 1;
         }
     }
 
     &__result {
         &__date {
-            font-family: $light;
+            font-family: $regular;
             line-height: 24px;
             font-size: 16px;
             color: $grey-ll;
