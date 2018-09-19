@@ -18,7 +18,7 @@ input {
     font-size: 16px;
     color: #000;
     line-height: 24px;
-    
+
     &:focus {
         border-color: $sandy;
     }
@@ -37,9 +37,15 @@ img {
 .row {
     margin: 0 -10px;
 }
-
+ 
 [class*="col-"] {
     padding: 0 10px;
+}
+
+.row.no-gutters {
+    [class*="col-"] {
+        padding: 0;
+    }
 }
 
 .right {

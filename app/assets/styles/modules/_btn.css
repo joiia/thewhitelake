@@ -6,6 +6,12 @@
     text-align: center;
     line-height: 20px;
     display: inline-block;
+    transition: all .5s;
+    box-shadow: 0px 5px 25px rgba(174, 150, 123, 0.2);
+    
+    &:hover {
+        box-shadow: none; 
+    }
 
     &--l {
         font-size: 22px;
@@ -24,6 +30,10 @@
     &--sandy {
         background: $sandy;
         color: #fff;
+        
+        &:hover {
+            background: $sandy-ll;
+        }
     }
 
     &--load-more {
@@ -43,5 +53,12 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        transition: all .5s;
+        box-shadow: 0px 5px 25px rgba(174, 150, 123, 0.2);
+        
+        &:hover {
+            background: $sandy-ll;
+            box-shadow: none;
+        }
     }
 }

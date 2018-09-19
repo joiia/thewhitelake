@@ -1,11 +1,13 @@
 $sandy: #AE967B;
 $sandy-l: rgba(158, 131, 103, 0.75);
+$sandy-ll: #BBA185;
 
 $grey-lll: rgba(0, 0, 0, 0.1);
 $grey-ll: rgba(0, 0, 0, 0.25);
 $grey-l: #f4f4f4;
 
 $black: rgba(0, 0, 0, 0.9);
+$black-l: rgba(0, 0, 0, 0.7);
 
 $light: Gilam-Book;
 $regular: Gilam-Regular;

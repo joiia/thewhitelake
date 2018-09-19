@@ -2,59 +2,137 @@
 
 
         .icon {
-            background-image: url('../../assets/images/sprites/sprite-968017bb.svg');
+            background-image: url('../../assets/images/sprites/sprite-e5def048.svg');
         }
 
         .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-968017bb.png');
+            background-image: url('../../assets/images/sprites/sprite-e5def048.png');
         }
 
         
 
-    .icon--arrows--b {
+    .icon--arrows {
         width: 19px; 
         height: 24px;
-        background-position: 0 0;  
+        background-position: 0 63.888888888888886%;  
     }
 
     .icon--arrows--w {
         width: 19px; 
         height: 24px;
-        background-position: 42.22222222222222% 0;  
+        background-position: 22.352941176470587% 63.888888888888886%;  
     }
 
     .icon--close {
         width: 18px; 
         height: 18px;
-        background-position: 82.6086956521739% 0;  
+        background-position: 93.02325581395348% 46.15384615384615%;  
     }
 
     .icon--comments {
         width: 14px; 
         height: 13px;
-        background-position: 30% 94.73684210526316%;  
+        background-position: 42.22222222222222% 97.59036144578313%;  
     }
 
-    .icon--fb--b {
+    .icon--fb {
+        width: 13px; 
+        height: 25px;
+        background-position: 59.34065934065934% 0;  
+    }
+
+    .icon--fb-s {
         width: 8px; 
         height: 14px;
-        background-position: 100% 0;  
+        background-position: 31.25% 98.78048780487805%;  
     }
 
-    .icon--insta--b {
+    .icon--fb-s-w {
+        width: 8px; 
+        height: 14px;
+        background-position: 56.25% 30.48780487804878%;  
+    }
+
+    .icon--fb-w {
+        width: 13px; 
+        height: 25px;
+        background-position: 73.62637362637362% 0;  
+    }
+
+    .icon--fb-xs-w {
+        width: 9px; 
+        height: 15px;
+        background-position: 70.52631578947368% 30.864197530864196%;  
+    }
+
+    .icon--insta-s {
         width: 15px; 
         height: 15px;
         background-position: 0 100%;  
     }
 
+    .icon--insta-s-w {
+        width: 15px; 
+        height: 15px;
+        background-position: 16.853932584269664% 100%;  
+    }
+
+    .icon--ml {
+        width: 26px; 
+        height: 22px;
+        background-position: 0 32.432432432432435%;  
+    }
+
+    .icon--ml-w {
+        width: 26px; 
+        height: 22px;
+        background-position: 35.8974358974359% 0;  
+    }
+
+    .icon--ml-wb {
+        width: 28px; 
+        height: 24px;
+        background-position: 0 0;  
+    }
+
+    .icon--tw {
+        width: 24px; 
+        height: 21px;
+        background-position: 100% 0;  
+    }
+
+    .icon--tw-w {
+        width: 24px; 
+        height: 21px;
+        background-position: 32.5% 32%;  
+    }
+
+    .icon--tw-xs-w {
+        width: 19px; 
+        height: 15px;
+        background-position: 94.11764705882354% 25.925925925925927%;  
+    }
+
     .icon--views {
         width: 17px; 
         height: 12px;
-        background-position: 0 61.53846153846154%;  
+        background-position: 91.95402298850574% 64.28571428571429%;  
     }
 
-    .icon--vk--w {
+    .icon--vk {
+        width: 24px; 
+        height: 15px;
+        background-position: 47.5% 56.79012345679013%;  
+    }
+
+    .icon--vk-w {
         width: 17px; 
         height: 11px;
-        background-position: 36.170212765957444% 60%;  
+        background-position: 0 82.3529411764706%;  
+    }
+
+    .icon--vk-xs-w {
+        width: 17px; 
+        height: 11px;
+        background-position: 71.26436781609195% 54.11764705882353%;  
     }

@@ -19,12 +19,12 @@
         <header class="site-header">
             <div class="container-fluid">
                 <div class="row no-gutters">
-                    <div class="col-6 col-md-1 col-fixed--103">
+                    <div class="site-header__col-1">
                         <div class="site-header__logo">
                             <a href="#" class=""></a>
                         </div>
                     </div>
-                    <div class="col-3 col-md-10">
+                    <div class="site-header__col-2">
                         <div class="site-header__center">
                             <div class="site-header__menu primary-nav">
                                 <ul>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 col-md-2 right col-fixed--144">
+                    <div class="site-header__col-3 right">
                         <div class="site-header__btn">
                             <a class="btn btn--transparent">Реклама</a>
                         </div>
@@ -633,8 +633,22 @@
                             </div>
                         </div>
 
+                    </div>
 
+                    <div class="feed__loader center">
+                        <svg width="240px" height="150px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet">
+                            <path id="outline-bg" fill="none" stroke="#e4e4e4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+                                  d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+                            <path stroke="#AE967B" id="outline" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+                                  d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
 
+                        </svg>
+                    </div>
+
+                    <div class="center">
+                        <div class="btn btn--l btn--sandy feed__btn-load">
+                            Загрузить еще
+                        </div>
                     </div>
 
                 </div>
@@ -670,8 +684,8 @@
                     </div>
                     <div class="col-12 col-md-1">
                         <div class="site-footer__social right">
-                            <a href=""><i class="icon icon--fb--b"></i></a>
-                            <a href=""><i class="icon icon--insta--b"></i></a>
+                            <a class="site-footer__social-link site-footer__social-link--fb" href=""><i class="icon icon--fb-s"></i></a>
+                            <a class="site-footer__social-link site-footer__social-link--insta" href=""><i class="icon icon--insta-s"></i></a>
                         </div>
                     </div>
                 </div>
@@ -689,35 +703,45 @@
         <!-- endbuild -->
 
         <script
-                src="https://code.jquery.com/jquery-3.3.1.min.js"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                src="https://code.jquery.com/jquery-2.2.4.js"
+                integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
                 crossorigin="anonymous"></script>
 
 
-        <!-- build:js assets/scripts/jquery.nicescroll.min.js -->
-        <script src="temp/scripts/jquery.nicescroll.min.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js assets/scripts/loadMoreResults.js -->
-        <script src="temp/scripts/loadMoreResults.js"></script>
-        <!-- endbuild -->
-
         <script>
+
+
+
             $(document).ready(function() {
-                //$("body").niceScroll();
-                $(".load-more").loadMoreResults({
-                    displayedItems: 2,
-                    showItems: 2,
-                    tag: {
-                        'name': 'div',
-                        'class': 'feed__row'
-                    },
-                    button: {
-                        'class': 'btn--load-more',
-                        'text': 'Загрузить еще'
-                    }
+
+
+
+                $(".feed__row").slice(0, 2).show();
+                if ($(".feed__row:hidden").length != 0) {
+                    $(".feed__btn-load").addClass('feed__btn-load--is-visible');
+                }	
+
+                $(".feed__btn-load").on('click', function (e) {
+                    e.preventDefault();
+                    
+                    $(".feed__btn-load").removeClass('feed__btn-load--is-visible');
+                    $(".feed__loader").addClass('feed__loader--is-visible');
+                    
+                    
+                    setTimeout(function(){
+                        $(".feed__row:hidden").slice(0, 2).show();
+                        if ($(".feed__row:hidden").length !== 0) {
+                            $(".feed__btn-load").addClass('feed__btn-load--is-visible');
+                        }
+                        $(".feed__loader").removeClass('feed__loader--is-visible');
+                    }, 3000);
+
                 });
+
             });
+
+
+
         </script>
 
     </body>

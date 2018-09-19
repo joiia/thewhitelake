@@ -15,6 +15,6 @@ new RevealOnScroll($('.row'), '85%');
 
 var openModal = new OpenModal();  
 
-new ImageOrientation($('.feed-item__img img'));
+//new ImageOrientation($('.feed-item__img img'));
 
 var openSearch = new OpenSearch(); 

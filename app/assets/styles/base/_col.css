@@ -1,10 +1,12 @@
 
 .col {
-    &-fixed--103 {
-        flex: 0 0 103px;
+    &-fixed--133 {
+        flex: 0 0 133px;
+        max-width: 100%;
     }
     
-    &-fixed--144 {
-        flex: 0 0 144px;
+    &-fixed--164 {
+        flex: 0 0 164px;
+        max-width: 100%;
     }
 }

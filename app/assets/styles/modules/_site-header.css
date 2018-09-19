@@ -5,14 +5,27 @@
     left: 0;
     width: 100%;
     padding-top: 23px;
-    padding-left: 30px; 
     line-height: 20px;
+    
+    &__col-1 {
+        flex: 0 0 133px;
+        max-width: 100%;
+    }
+    
+    &__col-2 {
+        flex: 1 1 auto;
+    }
+    
+    &__col-3 {
+        flex: 0 0 164px;
+        max-width: 100%;
+    }
 
     &__logo {
         background: url('../../assets/images/logo.svg');
         width: 39px;
         height: 54px;
-        margin-left: 17px;
+        margin-left: 47px;
 
         a {
             display: block;
@@ -43,7 +56,9 @@
         opacity: 0.5;
         transition: all .5s;
         display: inline-block;
-        
+        margin-right: 30px;
+        float: right;
+
         &:hover {
             opacity: 1;
         }
