@@ -1960,13 +1960,13 @@ input[type="month"] {
 
 }.feed-item:hover {
         box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
-    }@media (min-width: 1960px) {.feed-item {
+    }@media (min-width: 1441px) {.feed-item {
         height: 470px
 
 
 
 
-}
+} 
     }.feed-item a {
         color: #fff;
     }.feed-item__img {
@@ -1988,11 +1988,11 @@ input[type="month"] {
         }.feed-item__img img {
             height: 100% !important;
             width: auto !important;
-        }@media (min-width: 1960px) {.feed-item__img img {
+        }@media (min-width: 1441px) {.feed-item__img img {
                 width: 100% !important;
                 height: auto !important;
                 max-width: 1000px
-        }
+        } 
     }.feed-item__img img.img--gorisontal {
                 height: 100% !important;
                 width: auto !important;
@@ -2033,10 +2033,10 @@ input[type="month"] {
             bottom: 75px;
         }.feed-item--l .feed-item__counters {
             margin-bottom: 6px;
-        }@media (min-width: 1960px) {.feed-item--l {
+        }@media (min-width: 1441px) {.feed-item--l {
             height: 960px
 
-    }
+    } 
     }.page-section {
     padding-bottom: 70px;
 }.headline {

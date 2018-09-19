@@ -23,8 +23,8 @@
 }
 
 @define-mixin atXXL {
-    @media (min-width: 1960px) {
-        @mixin-content;
+    @media (min-width: 1441px) {
+        @mixin-content; 
     }
 }
 
