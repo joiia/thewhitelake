@@ -1810,8 +1810,8 @@ input[type="month"] {
     margin: 0;
     padding: 0;
     font-weight: normal;
-}.col-fixed--73 {
-        flex: 0 0 73px;
+}.col-fixed--103 {
+        flex: 0 0 103px;
     }.col-fixed--144 {
         flex: 0 0 144px;
     }.btn {
@@ -1860,7 +1860,7 @@ input[type="month"] {
     left: 0;
     width: 100%;
     padding-top: 23px;
-    padding-left: 37px;
+    padding-left: 30px; 
     line-height: 20px;
 
 
@@ -1868,7 +1868,7 @@ input[type="month"] {
         background: url('../../assets/images/logo.svg');
         width: 39px;
         height: 54px;
-        margin: 0 auto;
+        margin-left: 17px;
     }.site-header__logo a {
             display: block;
         }.site-header__center {
@@ -2164,7 +2164,6 @@ input[type="month"] {
             -webkit-transform: translateX(-50%) translateY(-50%);
                     transform: translateX(-50%) translateY(-50%);
         }.primary-nav {
-    padding-left: 30px;
     font-family: Gilam-Regular;
 }.primary-nav ul {
         margin: 0;
