@@ -1861,6 +1861,7 @@ input[type="month"] {
     width: 100%;
     padding-top: 23px;
     padding-left: 37px;
+    line-height: 20px;
 
 
 }.site-header__logo {
@@ -1872,25 +1873,25 @@ input[type="month"] {
             display: block;
         }.site-header__center {
         display: flex;
-        padding-top: 18px;
         justify-content: space-between;
         position: relative;
         align-content: center;
+        padding-top: 9px;
     }.site-header__menu {
-
+        padding: 10px 0;
     }.site-header__search {
-        
-    }.site-header__link {
+        padding: 10px 0;
+    }.site-header__btn {
+        padding-top: 9px;
         font-family: Gilam-Regular;
         cursor: pointer;
-        padding-top: 18px;
         color: #fff;
         opacity: 0.5;
         transition: all .5s;
         display: inline-block;
-    }.site-header__link:hover {
+    }.site-header__btn:hover {
             opacity: 1;
-        }.site-header__link .btn {
+        }.site-header__btn .btn {
             height: 44px;
             border-color: rgba(255, 255, 255, 0.5);
         }.feed__container {
@@ -2013,22 +2014,31 @@ input[type="month"] {
         margin-right: 15px;
     }.search__link:hover {
             opacity: 1;
-        }.search__input {
-        //display: none;
-        font-family: Gilam-Regular;
+        }.search__input-wrapper {
+        display: none;
+        position: absolute;
         position: absolute;
         right: 0;
         top: 18px;
         width: 100%;
         height: 44px;
-        padding: 5px 20px;
+    }.search__input {
+        font-family: Gilam-Regular;
         font-size: 16px;
         color: #000;
         border: none;
         box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
         padding: 10px 20px;
+    }.search__close {
+        position: absolute;
+        top: 40px;
+        right: 15px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
     }.search__results {
-        //display: none;
+        display: none;
         position: absolute;
         right: 0;
         top: 67px;
