@@ -2,11 +2,11 @@
 
 
         .icon {
-            background-image: url('../../assets/images/sprites/sprite-e5def048.svg');
+            background-image: url('../../assets/images/sprites/sprite-2223f742.svg');
         }
 
         .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-e5def048.png');
+            background-image: url('../../assets/images/sprites/sprite-2223f742.png');
         }
 
         
@@ -14,82 +14,82 @@
     .icon--arrows {
         width: 19px; 
         height: 24px;
-        background-position: 0 63.888888888888886%;  
+        background-position: 84.21052631578948% 0;  
     }
 
-    .icon--arrows--w {
+    .icon--arrows-w {
         width: 19px; 
         height: 24px;
-        background-position: 22.352941176470587% 63.888888888888886%;  
+        background-position: 84.21052631578948% 32.87671232876713%;  
     }
 
     .icon--close {
         width: 18px; 
         height: 18px;
-        background-position: 93.02325581395348% 46.15384615384615%;  
+        background-position: 0 84.81012658227849%;  
     }
 
     .icon--comments {
         width: 14px; 
         height: 13px;
-        background-position: 42.22222222222222% 97.59036144578313%;  
+        background-position: 99% 70.23809523809524%;  
     }
 
     .icon--fb {
         width: 13px; 
         height: 25px;
-        background-position: 59.34065934065934% 0;  
+        background-position: 53.46534653465346% 0;  
     }
 
     .icon--fb-s {
         width: 8px; 
         height: 14px;
-        background-position: 31.25% 98.78048780487805%;  
+        background-position: 93.39622641509433% 54.21686746987952%;  
     }
 
     .icon--fb-s-w {
         width: 8px; 
         height: 14px;
-        background-position: 56.25% 30.48780487804878%;  
+        background-position: 93.39622641509433% 86.74698795180723%;  
     }
 
     .icon--fb-w {
         width: 13px; 
         height: 25px;
-        background-position: 73.62637362637362% 0;  
+        background-position: 66.33663366336634% 0;  
     }
 
     .icon--fb-xs-w {
         width: 9px; 
         height: 15px;
-        background-position: 70.52631578947368% 30.864197530864196%;  
+        background-position: 94.28571428571429% 18.29268292682927%;  
     }
 
     .icon--insta-s {
         width: 15px; 
         height: 15px;
-        background-position: 0 100%;  
+        background-position: 100% 0;  
     }
 
     .icon--insta-s-w {
         width: 15px; 
         height: 15px;
-        background-position: 16.853932584269664% 100%;  
+        background-position: 100% 36.58536585365854%;  
     }
 
-    .icon--ml {
+    .icon--tg {
         width: 26px; 
         height: 22px;
-        background-position: 0 32.432432432432435%;  
+        background-position: 31.818181818181817% 0;  
     }
 
-    .icon--ml-w {
+    .icon--tg-w {
         width: 26px; 
         height: 22px;
-        background-position: 35.8974358974359% 0;  
+        background-position: 0 32%;  
     }
 
-    .icon--ml-wb {
+    .icon--tg-wb {
         width: 28px; 
         height: 24px;
         background-position: 0 0;  
@@ -98,41 +98,47 @@
     .icon--tw {
         width: 24px; 
         height: 21px;
-        background-position: 100% 0;  
+        background-position: 0 60.526315789473685%;  
     }
 
     .icon--tw-w {
         width: 24px; 
         height: 21px;
-        background-position: 32.5% 32%;  
+        background-position: 28.88888888888889% 31.57894736842105%;  
     }
 
     .icon--tw-xs-w {
         width: 19px; 
         height: 15px;
-        background-position: 94.11764705882354% 25.925925925925927%;  
+        background-position: 84.21052631578948% 58.53658536585366%;  
     }
 
     .icon--views {
         width: 17px; 
         height: 12px;
-        background-position: 91.95402298850574% 64.28571428571429%;  
+        background-position: 0 100%;  
     }
 
     .icon--vk {
         width: 24px; 
         height: 15px;
-        background-position: 47.5% 56.79012345679013%;  
+        background-position: 53.333333333333336% 56.09756097560975%;  
+    }
+
+    .icon--vk-s-w {
+        width: 17px; 
+        height: 11px;
+        background-position: 36.08247422680412% 77.90697674418605%;  
     }
 
     .icon--vk-w {
-        width: 17px; 
-        height: 11px;
-        background-position: 0 82.3529411764706%;  
+        width: 24px; 
+        height: 15px;
+        background-position: 26.666666666666668% 56.09756097560975%;  
     }
 
     .icon--vk-xs-w {
         width: 17px; 
         height: 11px;
-        background-position: 71.26436781609195% 54.11764705882353%;  
+        background-position: 18.556701030927837% 77.90697674418605%;  
     }

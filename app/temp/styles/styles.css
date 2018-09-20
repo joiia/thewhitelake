@@ -1771,7 +1771,7 @@ input[type="month"] {
   }
 }@font-face {font-family: 'Gilam-Regular';src: url('../../assets/assets/fonts/37960B_6_0.eot');src: url('../../assets/fonts/37960B_6_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_6_0.woff2') format('woff2'),url('../../assets/fonts/37960B_6_0.woff') format('woff'),url('../../assets/fonts/37960B_6_0.ttf') format('truetype');}@font-face {font-family: 'Gilam-Bold';src: url('../../assets/fonts/37960B_D_0.eot');src: url('../../assets/fonts/37960B_D_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_D_0.woff2') format('woff2'),url('../../assets/fonts/37960B_D_0.woff') format('woff'),url('../../assets/fonts/37960B_D_0.ttf') format('truetype');}@font-face {font-family: 'Gilam-Book';src: url('../../assets/fonts/37960B_E_0.eot');src: url('../../assets/fonts/37960B_E_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_E_0.woff2') format('woff2'),url('../../assets/fonts/37960B_E_0.woff') format('woff'),url('../../assets/fonts/37960B_E_0.ttf') format('truetype');}@font-face {font-family: 'Gilam-BookItalic';src: url('../../assets/fonts/37960B_10_0.eot');src: url('../../assets/fonts/37960B_10_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_10_0.woff2') format('woff2'),url('../../assets/fonts/37960B_10_0.woff') format('woff'),url('../../assets/fonts/37960B_10_0.ttf') format('truetype');}body {
     background: #fff;
-    margin: 40px 30px;
+    margin: 40px;
     min-height: 100vh;
     position: relative;
     font-family: Gilam-Book;
@@ -1973,9 +1973,6 @@ input[type="month"] {
         position: relative;
         height: 100%;
 
-
-
-
     }.feed-item__img:before {
             content: "";
             display: block;
@@ -2009,7 +2006,7 @@ input[type="month"] {
     }.feed-item__counter {
         font-size: 14px;
         display: inline-block;
-        margin-right: 35px;
+        margin-right: 40px;
     }.feed-item__counter .icon {
             top: 1px;
         }.feed-item__counter:last-child {
@@ -2073,15 +2070,18 @@ input[type="month"] {
         }.search__field {
         opacity: 0;
         z-index: -1;
+        overflow: hidden;
         position: absolute;
-        right: 0;
+        right: 10px;
         top: 9px;
         width: 100%;
         height: 44px;
         transition: all .5s;
+        height: 0;
     }.search__field--is-visible {
             opacity: 1;
             z-index: 1;
+            height: auto;
         }.search__input {
         font-family: Gilam-Regular;
         font-size: 16px;
@@ -2101,7 +2101,9 @@ input[type="month"] {
         opacity: 0;
         z-index: -1;
         position: absolute;
-        right: 0;
+        height: 0;
+        overflow: hidden;
+        right: 10px;
         top: 58px;
         width: 100%;
         background: #fff;
@@ -2125,6 +2127,7 @@ input[type="month"] {
         }.search__results--is-visible {
             opacity: 1;
             z-index: 1;
+            height: auto;
         }.search__result__date {
             font-family: Gilam-Regular;
             line-height: 24px;
@@ -2134,93 +2137,97 @@ input[type="month"] {
             vertical-align: middle;
             display: inline-block;
         }.section-title {}.icon {
-            background-image: url('../../assets/images/sprites/sprite-e5def048.svg');
+            background-image: url('../../assets/images/sprites/sprite-2223f742.svg');
         }.no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-e5def048.png');
+            background-image: url('../../assets/images/sprites/sprite-2223f742.png');
         }.icon--arrows {
         width: 19px; 
         height: 24px;
-        background-position: 0 63.888888888888886%;  
-    }.icon--arrows--w {
+        background-position: 84.21052631578948% 0;  
+    }.icon--arrows-w {
         width: 19px; 
         height: 24px;
-        background-position: 22.352941176470587% 63.888888888888886%;  
+        background-position: 84.21052631578948% 32.87671232876713%;  
     }.icon--close {
         width: 18px; 
         height: 18px;
-        background-position: 93.02325581395348% 46.15384615384615%;  
+        background-position: 0 84.81012658227849%;  
     }.icon--comments {
         width: 14px; 
         height: 13px;
-        background-position: 42.22222222222222% 97.59036144578313%;  
+        background-position: 99% 70.23809523809524%;  
     }.icon--fb {
         width: 13px; 
         height: 25px;
-        background-position: 59.34065934065934% 0;  
+        background-position: 53.46534653465346% 0;  
     }.icon--fb-s {
         width: 8px; 
         height: 14px;
-        background-position: 31.25% 98.78048780487805%;  
+        background-position: 93.39622641509433% 54.21686746987952%;  
     }.icon--fb-s-w {
         width: 8px; 
         height: 14px;
-        background-position: 56.25% 30.48780487804878%;  
+        background-position: 93.39622641509433% 86.74698795180723%;  
     }.icon--fb-w {
         width: 13px; 
         height: 25px;
-        background-position: 73.62637362637362% 0;  
+        background-position: 66.33663366336634% 0;  
     }.icon--fb-xs-w {
         width: 9px; 
         height: 15px;
-        background-position: 70.52631578947368% 30.864197530864196%;  
+        background-position: 94.28571428571429% 18.29268292682927%;  
     }.icon--insta-s {
         width: 15px; 
         height: 15px;
-        background-position: 0 100%;  
+        background-position: 100% 0;  
     }.icon--insta-s-w {
         width: 15px; 
         height: 15px;
-        background-position: 16.853932584269664% 100%;  
-    }.icon--ml {
+        background-position: 100% 36.58536585365854%;  
+    }.icon--tg {
         width: 26px; 
         height: 22px;
-        background-position: 0 32.432432432432435%;  
-    }.icon--ml-w {
+        background-position: 31.818181818181817% 0;  
+    }.icon--tg-w {
         width: 26px; 
         height: 22px;
-        background-position: 35.8974358974359% 0;  
-    }.icon--ml-wb {
+        background-position: 0 32%;  
+    }.icon--tg-wb {
         width: 28px; 
         height: 24px;
         background-position: 0 0;  
     }.icon--tw {
         width: 24px; 
         height: 21px;
-        background-position: 100% 0;  
+        background-position: 0 60.526315789473685%;  
     }.icon--tw-w {
         width: 24px; 
         height: 21px;
-        background-position: 32.5% 32%;  
+        background-position: 28.88888888888889% 31.57894736842105%;  
     }.icon--tw-xs-w {
         width: 19px; 
         height: 15px;
-        background-position: 94.11764705882354% 25.925925925925927%;  
+        background-position: 84.21052631578948% 58.53658536585366%;  
     }.icon--views {
         width: 17px; 
         height: 12px;
-        background-position: 91.95402298850574% 64.28571428571429%;  
+        background-position: 0 100%;  
     }.icon--vk {
         width: 24px; 
         height: 15px;
-        background-position: 47.5% 56.79012345679013%;  
-    }.icon--vk-w {
+        background-position: 53.333333333333336% 56.09756097560975%;  
+    }.icon--vk-s-w {
         width: 17px; 
         height: 11px;
-        background-position: 0 82.3529411764706%;  
+        background-position: 36.08247422680412% 77.90697674418605%;  
+    }.icon--vk-w {
+        width: 24px; 
+        height: 15px;
+        background-position: 26.666666666666668% 56.09756097560975%;  
     }.icon--vk-xs-w {
         width: 17px; 
         height: 11px;
-        background-position: 71.26436781609195% 54.11764705882353%;  
+        background-position: 18.556701030927837% 77.90697674418605%;  
     }.site-footer__menu {
         font-size: 16px;
         margin-bottom: 30px;
@@ -2265,7 +2272,10 @@ input[type="month"] {
             left: 50%;
             -webkit-transform: translateX(-50%) translateY(-50%);
                     transform: translateX(-50%) translateY(-50%);
-        }.site-footer__social-link {
+            transition: all .5s;
+        }.site-footer__social i:last-child {
+                opacity: 0;
+            }.site-footer__social-link {
             position: relative;
             width: 30px;
             height: 30px;
@@ -2275,12 +2285,14 @@ input[type="month"] {
             display: inline-block;
             transition: all .5s;
 
+
+
         }.site-footer__social-link:hover {
                 background: #AE967B;
-            }.site-footer__social-link--fb:hover i {
-                        background-position: 56.25% 30.48780487804878%;  
-                    }.site-footer__social-link--insta:hover i {
-                        background-position: 16.853932584269664% 100%;  
+            }.site-footer__social-link:hover i {
+                    opacity: 0;
+                }.site-footer__social-link:hover i:last-child {
+                        opacity: 1;
                     }.primary-nav {
     font-family: Gilam-Regular;
 }.primary-nav ul {
@@ -2369,4 +2381,135 @@ input[type="month"] {
     stroke-dasharray: 2.42777px, 242.77666px;
     stroke-dashoffset: -240.34889px;
   }
-}
+}.hero {
+    height: 500px;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+
+}.hero a {
+        color: #fff;
+        text-decoration: none;
+    }.hero__img {
+        width: 100%;
+
+    }.hero__img:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+            z-index: 2;
+        }.hero__img img {
+            position: absolute;
+            top: 89%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            width: 100%;
+            height: auto;
+        }.hero__text {
+        position: absolute;
+        z-index: 3;
+        color: #fff;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        padding: 0 30px;
+    }.hero__counters {
+        margin-bottom: 22px;
+    }.hero__counter {
+        font-size: 14px;
+        display: inline-block;
+        margin-right: 40px;
+    }.hero__counter .icon {
+            top: 1px;
+        }.hero__counter:last-child {
+            margin-right: 0;
+        }.hero__title {
+        margin-bottom: 60px;
+    }.hero__author {
+        font-family: Gilam-Regular;
+        margin-bottom: 11px;
+    }.hero__author-img {
+            overflow: hidden;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }.hero__author-name {
+            line-height: 24px;
+        }.hero__date {
+        font-family: Gilam-Regular;
+        opacity: 0.5;
+        line-height: 24px;
+        margin-bottom: 22px;
+    }.sticker {
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    left: 0;
+    top: 182px;
+    height: 320px;
+    width: 77px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 0 3px 3px 0;
+    overflow: hidden;
+
+}.sticker__item {
+        padding: 30px 25px;  
+        border-bottom: 1px solid #F2F2F2;
+        transition: all .5s;
+        cursor: pointer;
+        position: relative;
+        font-family: 'Playfair Display', serif;
+        line-height: 28px;
+        font-size: 25px;
+        width: 100%;
+        height: 100%;
+
+
+    }.sticker__item:last-child {
+            border: none;
+        }.sticker__item i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+                    transform: translateX(-50%) translateY(-50%);
+            transition: all .5s;
+            margin: 0;
+        }.sticker__item i:last-child {
+                opacity: 0;
+            }.sticker__item:hover {
+            background: #AE967B;
+            border-color: #AE967B;
+            color: #fff;
+        }.sticker__item:hover i {
+                opacity: 0;
+            }.sticker__item:hover i:last-child {
+                    opacity: 1 !important;
+                }.sticker__title {
+        width: 206px;
+        -webkit-transform: translateX(-101%) rotate(270deg);
+                transform: translateX(-101%) rotate(270deg);
+        -webkit-transform-origin: right top;
+                transform-origin: right top;
+    }.sticker__icons {
+        display: block;
+        position: absolute;
+        bottom: 37px;
+        left: 0;
+        width: 100%;
+        height: 24px;
+    }.sticker--social .sticker__item {
+            height: 80px;
+            text-align: center;
+        }.sticker--right {
+        left: auto;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }

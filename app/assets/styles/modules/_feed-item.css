@@ -35,10 +35,6 @@
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
         }
 
-
-
-
-
         img {
             height: 100% !important;
             width: auto !important;
@@ -54,9 +50,6 @@
                 width: auto !important;
             }
         }
-
-
-
 
     }
 
@@ -76,7 +69,7 @@
     &__counter {
         font-size: 14px;
         display: inline-block;
-        margin-right: 35px;
+        margin-right: 40px;
 
         .icon {
             top: 1px;

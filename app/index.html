@@ -72,7 +72,7 @@
                             <div class="row">
                                 <div class="col col-12 col-md-6"> 
                                     <div class="feed-item feed-item--l">
-                                        <a href="">
+                                        <a href="/article.html">
                                             <div class="feed-item__img"><img src="assets/images/1.jpg" alt=""></div>
                                             <div class="feed-item__text">
                                                 <div class="feed-item__counters">
@@ -684,8 +684,12 @@
                     </div>
                     <div class="col-12 col-md-1">
                         <div class="site-footer__social right">
-                            <a class="site-footer__social-link site-footer__social-link--fb" href=""><i class="icon icon--fb-s"></i></a>
-                            <a class="site-footer__social-link site-footer__social-link--insta" href=""><i class="icon icon--insta-s"></i></a>
+                            <a class="site-footer__social-link site-footer__social-link--fb" href="">
+                                <i class="icon icon--fb-s"></i><i class="icon icon--fb-s-w"></i>
+                            </a>
+                            <a class="site-footer__social-link site-footer__social-link--insta" href="">
+                                <i class="icon icon--insta-s"></i><i class="icon icon--insta-s-w"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -723,11 +727,11 @@
 
                 $(".feed__btn-load").on('click', function (e) {
                     e.preventDefault();
-                    
+
                     $(".feed__btn-load").removeClass('feed__btn-load--is-visible');
                     $(".feed__loader").addClass('feed__loader--is-visible');
-                    
-                    
+
+
                     setTimeout(function(){
                         $(".feed__row:hidden").slice(0, 2).show();
                         if ($(".feed__row:hidden").length !== 0) {

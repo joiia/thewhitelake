@@ -10,6 +10,7 @@ import OpenSearch from "./modules/OpenSearch";
 var mobileMenu = new MobileMenu();
 
 new RevealOnScroll($('.row'), '85%');
+new RevealOnScroll($('.hero'), '85%');
 
 //var stickyHeader = new StickyHeader();
 
