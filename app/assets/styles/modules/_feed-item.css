@@ -36,10 +36,17 @@
         }
 
         img {
-            height: 100% !important;
-            width: auto !important;
+            width: 100% !important;
+            height: auto !important;
+            max-width: 10000px;
 
-            @mixin atXXL {
+            @mixin atXL {
+                height: 100% !important;
+                width: auto !important;
+
+            }
+
+            @mixin atXXXL {
                 width: 100% !important;
                 height: auto !important;
                 max-width: 1000px;
@@ -74,7 +81,7 @@
         .icon {
             top: 1px;
         }
-        
+
         &:last-child {
             margin-right: 0;
         }
@@ -104,9 +111,30 @@
             margin-bottom: 6px;
         }
 
+        img {
+            width: 100% !important;
+            height: auto !important;
+            max-width: 1000px;
+
+
+            @mixin atL {
+                height: 100% !important;
+                width: auto !important;
+            }
+
+            @mixin atXXXL {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 1000px;
+            }
+
+        }
+
         @mixin atXXL {
             height: 960px;
         }
+
+
 
     }
 

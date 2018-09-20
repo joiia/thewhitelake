@@ -2059,9 +2059,14 @@ input[type="month"] {
             height: 100%;
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
         }.feed-item__img img {
-            height: 100% !important;
-            width: auto !important;
-        }@media (min-width: 1441px) {.feed-item__img img {
+            width: 100% !important;
+            height: auto !important;
+            max-width: 10000px;
+        }@media (min-width: 1200px) {.feed-item__img img {
+                height: 100% !important;
+                width: auto !important
+        }
+    }@media (min-width: 1534px) {.feed-item__img img {
                 width: 100% !important;
                 height: auto !important;
                 max-width: 1000px
@@ -2102,12 +2107,32 @@ input[type="month"] {
     }.feed-item--l {
         height: 900px;
 
+
+
     }.feed-item--l .feed-item__text {
             bottom: 75px;
         }.feed-item--l .feed-item__counters {
             margin-bottom: 6px;
-        }@media (min-width: 1441px) {.feed-item--l {
+        }.feed-item--l img {
+            width: 100% !important;
+            height: auto !important;
+            max-width: 1000px;
+
+        }@media (min-width: 992px) {.feed-item--l img {
+                height: 100% !important;
+                width: auto !important
+
+        }
+    }@media (min-width: 1534px) {.feed-item--l img {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 1000px
+
+        } 
+    }@media (min-width: 1441px) {.feed-item--l {
             height: 960px
+
+
 
     } 
     }.page-section {
@@ -2158,7 +2183,7 @@ input[type="month"] {
         transition: all .5s;
         font-family: Gilam-Regular;
         cursor: pointer;
-        margin-right: 15px;
+        margin-right: 25px;
     }.search__link:hover {
             opacity: 1;
         }.search__field {
@@ -2770,7 +2795,8 @@ input[type="month"] {
     }.comment__reply-link {
         font-size: 16px;
         font-family: Gilam-Regular;
-        color: #AE967B;
+        color: #AE967B !important;
+        text-decoration: none !important;
     }.comment--reply {
         margin-bottom: 0;
         padding-top: 40px;

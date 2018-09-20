@@ -34,7 +34,8 @@
     &__reply-link {
         font-size: 16px;
         font-family: $regular;
-        color: $sandy;
+        color: $sandy !important;
+        text-decoration: none !important;
     }
 
     &--reply {
