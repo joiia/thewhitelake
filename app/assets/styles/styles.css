@@ -30,3 +30,5 @@
 @import "modules/_form";
 @import "modules/_comments";
 @import "modules/_comment";
+@import "modules/_simple-page";
+@import "modules/_support";

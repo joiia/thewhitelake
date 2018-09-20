@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+
+        <link rel="stylesheet" href="assets/styles/styles-a9678b18fb.css"/>
+
+        <script src="assets/scripts/Vendor-773c281cbb.js"></script>
+    </head>
+
+    <body>
+
+        <header class="site-header">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="site-header__col-1">
+                        <div class="site-header__logo">
+                            <a href="https://joiia.github.io/thewhitelake/" class=""></a>
+                        </div>
+                    </div>
+                    <div class="site-header__col-2">
+                        <div class="site-header__center">
+                            <div class="site-header__menu primary-nav">
+                                <ul>
+                                    <li class="current-menu-item"><a href="">Все</a></li>
+                                    <li><a href="">Истории</a></li>
+                                    <li><a href="">Путешествия</a></li>
+                                    <li><a href="">Вдохновение</a></li>
+                                    <li><a href="">Места</a></li>
+                                    <li><a href="">Тренды</a></li>
+                                </ul>
+                            </div>
+                            <div class="site-header__search">
+                                <div class="search__btn search__link link">Поиск</div>
+                                <div class="search__field"> 
+                                    <input class="search__input" type="text" placeholder="Что будем искать?">
+                                    <div class="search__close"><i class="icon icon--close"></i></div>
+                                </div>
+                                <div class="search__results">
+                                    <ul>
+                                        <li class="search__result"><a href=""><span class="search__result__title">Гастрономическое путешествие по Италии</span><span class="search__result__date">15 апреля 2017</span></a></li>
+                                        <li class="search__result"><a href=""><span class="search__result__title">Путешествие по Барселоне</span><span class="search__result__date">4 марта 2017</span></a></li>
+                                        <li class="search__result"><a href=""><span class="search__result__title">Морское путешествие по Подмосковью</span><span class="search__result__date">24 декабря 2016</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-header__col-3 right">
+                        <div class="site-header__btn">
+                            <a href="advertising.html" class="btn btn--transparent">Реклама</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="advertising simple-page inner-page page">
+            <div class="hero hero--mrg-b-l hero--no-gr">
+                <div class="hero__img">
+                    <img src="assets/images/bg-1.jpg" alt="">
+                </div>
+                <div class="hero__content">
+                    <h2>Медиакит</h2>
+                    <p>
+                        Для того, чтобы получить медиакит, свяжитесь с нами по почте:<br> <a href="">artembelozersky@gmail.com</a>
+                    <p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-11">
+                        <div class="site-footer__menu">
+                            <ul>
+                                <li>
+                                    <a href="about.html">О проекте</a>
+                                </li>
+                                <li>
+                                    <a href="advertising.html">Реклама</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="site-footer__copyright">
+                            © 2015—2018 
+                            Интернет-журнал The White Lake. Использование материалов разрешено только с предварительного согласия редакции.
+                        </div>
+                        <div class="site-footer__design">
+                            <a href="">design</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-1">
+                        <div class="site-footer__social right">
+                            <a class="site-footer__social-link site-footer__social-link--fb" href="">
+                                <i class="icon icon--fb-s"></i><i class="icon icon--fb-s-w"></i>
+                            </a>
+                            <a class="site-footer__social-link site-footer__social-link--insta" href="">
+                                <i class="icon icon--insta-s"></i><i class="icon icon--insta-s-w"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="assets/scripts/App-9620fe54fe.js"></script>
+
+        <script
+                src="https://code.jquery.com/jquery-2.2.4.js"
+                integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+                crossorigin="anonymous"></script>
+
+
+        <script>
+
+
+
+            $(document).ready(function() {
+
+
+
+                $(".feed__row").slice(0, 2).show();
+                if ($(".feed__row:hidden").length != 0) {
+                    $(".feed__btn-load").addClass('feed__btn-load--is-visible');
+                }	
+
+                $(".feed__btn-load").on('click', function (e) {
+                    e.preventDefault();
+
+                    $(".feed__btn-load").removeClass('feed__btn-load--is-visible');
+                    $(".feed__loader").addClass('feed__loader--is-visible');
+
+
+                    setTimeout(function(){
+                        $(".feed__row:hidden").slice(0, 2).show();
+                        if ($(".feed__row:hidden").length !== 0) {
+                            $(".feed__btn-load").addClass('feed__btn-load--is-visible');
+                        }
+                        $(".feed__loader").removeClass('feed__loader--is-visible');
+                    }, 3000);
+
+                });
+
+            });
+
+
+
+        </script>
+
+    </body>
+
+</html>

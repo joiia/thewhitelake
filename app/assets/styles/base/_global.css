@@ -1,7 +1,6 @@
 body {
     background: #fff;
     margin: 40px;
-    min-height: 100vh;
     position: relative;
     font-family: $light;
 }

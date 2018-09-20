@@ -1772,7 +1772,6 @@ input[type="month"] {
 }@font-face {font-family: 'Gilam-Regular';src: url('../../assets/assets/fonts/37960B_6_0.eot');src: url('../../assets/fonts/37960B_6_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_6_0.woff2') format('woff2'),url('../../assets/fonts/37960B_6_0.woff') format('woff'),url('../../assets/fonts/37960B_6_0.ttf') format('truetype');}@font-face {font-family: 'Gilam-Bold';src: url('../../assets/fonts/37960B_D_0.eot');src: url('../../assets/fonts/37960B_D_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_D_0.woff2') format('woff2'),url('../../assets/fonts/37960B_D_0.woff') format('woff'),url('../../assets/fonts/37960B_D_0.ttf') format('truetype');}@font-face {font-family: 'Gilam-Book';src: url('../../assets/fonts/37960B_E_0.eot');src: url('../../assets/fonts/37960B_E_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_E_0.woff2') format('woff2'),url('../../assets/fonts/37960B_E_0.woff') format('woff'),url('../../assets/fonts/37960B_E_0.ttf') format('truetype');}@font-face {font-family: 'Gilam-BookItalic';src: url('../../assets/fonts/37960B_10_0.eot');src: url('../../assets/fonts/37960B_10_0.eot?#iefix') format('embedded-opentype'),url('../../assets/fonts/37960B_10_0.woff2') format('woff2'),url('../../assets/fonts/37960B_10_0.woff') format('woff'),url('../../assets/fonts/37960B_10_0.ttf') format('truetype');}body {
     background: #fff;
     margin: 40px;
-    min-height: 100vh;
     position: relative;
     font-family: Gilam-Book;
 }a, input {
@@ -1950,7 +1949,10 @@ input[type="month"] {
     line-height: 20px;
 
 
-}.site-header__col-1 {
+}.site-header a {
+        color: #fff;
+        text-decoration: none;
+    }.site-header__col-1 {
         flex: 0 0 133px;
         max-width: 100%;
     }.site-header__col-2 {
@@ -2496,10 +2498,6 @@ input[type="month"] {
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
             z-index: 2;
         }.hero__img img {
-            position: absolute;
-            top: 89%;
-            -webkit-transform: translateY(-50%);
-                    transform: translateY(-50%);
             width: 100%;
             height: auto;
         }.hero__text {
@@ -2562,6 +2560,31 @@ input[type="month"] {
                 width: 100%;
                 height: 100%;
                 display: block;
+            }.hero__content {
+        background: #fff;
+        width: 842px;
+        max-width: 100%;
+        padding: 28px 40px 38px;
+        position: absolute;
+        top: 157px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        z-index: 3;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+    }.hero__content h2 {
+            margin-bottom: 19px;
+        }.hero__content p {
+            font-size: 20px;
+            line-height: 29px;
+        }.hero__content a {
+            color: #AE967B;
+            font-family: Gilam-Bold;
+        }.hero--mrg-b-l {
+        margin-bottom: 80px;
+    }.hero--no-gr .hero__img:before {
+                display: none;
             }.sticker {
     position: fixed;
     z-index: 100;
@@ -2754,4 +2777,35 @@ input[type="month"] {
     }.comment:last-child {
         margin-bottom: 0;
 
-    }
+    }.simple-page h2 {
+        margin-bottom: 19px;
+    }.simple-page p {
+        font-size: 20px;
+        line-height: 29px;
+    }.simple-page a {
+        color: #AE967B;
+        font-family: Gilam-Bold;
+    }.support {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}.support__logo {
+        background: #fff;
+        margin: 0 17px;
+        width: 263px;
+        height: 95px;
+        box-shadow: 0px 5px 25px rgba(174, 150, 123, 0.2);
+        position: relative;
+        border-radius: 3px;
+        
+    }.support__logo img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+                    transform: translateX(-50%) translateY(-50%);
+        }.support__logo a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
