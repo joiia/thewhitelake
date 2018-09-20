@@ -9,12 +9,24 @@
         padding-top: 70px;
     }
     
+    &--pd-t-h {
+        padding-top: 100px;
+    }
+    
     &--pd-b-xs {
         padding-bottom: 5px;
     }
     
     &--pd-b-s {
         padding-bottom: 40px;
+    }
+    
+    &--pd-b-h {
+        padding-bottom: 100px;
+    }
+    
+    &--mrg-b-l {
+        margin-bottom: 80px;
     }
     
     &--light {

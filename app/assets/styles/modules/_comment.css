@@ -1,0 +1,49 @@
+.comment {
+    display: flex;
+    margin-bottom: 40px;
+
+    &__userpic {
+        flex: 0 0 80px;
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    &__container {
+        flex: 1 1 auto;
+        padding-left: 20px; 
+    }
+
+    &__content {
+
+    }
+
+    &__author {
+        font-size: 22px;
+        font-family: $bold;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-family: $light;
+        margin-bottom: 15px;
+    }
+
+    &__reply-link {
+        font-size: 16px;
+        font-family: $regular;
+        color: $sandy;
+    }
+
+    &--reply {
+        margin-bottom: 0;
+        padding-top: 40px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+
+    }
+}

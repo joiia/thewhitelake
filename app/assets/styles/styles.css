@@ -27,3 +27,6 @@
 @import "modules/_sticker";
 @import "modules/_article";
 @import "modules/_post";
+@import "modules/_form";
+@import "modules/_comments";
+@import "modules/_comment";

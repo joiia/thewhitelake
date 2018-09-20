@@ -1,0 +1,66 @@
+.form {
+    background: #fff;
+    padding: 70px 172px;
+    font-family: $regular;
+    width: 1015px;
+    max-width: 100%;
+    border: 1px solid #f1f1f1;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    
+    &__login {
+        color: $grey-ll;
+        margin-bottom: 40px;
+    }
+    
+    &__login-icons {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 20px;
+    }
+    
+    &__login-icon {
+        background: $sandy;
+        width: 35px;
+        height: 35px;
+        border-radius: 3px;
+        transition: all .5s;
+        margin-right: 8px;
+        position: relative;
+        display: inline-block;
+        
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        
+        &:hover {
+            background: $sandy-l;
+        }
+    }
+    
+    input, textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 56px;
+        border-radius: 2px;
+        
+        &:focus {
+            border-color: $sandy;
+        }
+    }
+    
+    textarea {
+        height: 132px;
+    }
+    
+    .btn {
+        width: 188px;
+        border: none;
+        height: 54px;
+        float: right;
+    }
+}
