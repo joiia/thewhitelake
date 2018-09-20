@@ -61,4 +61,53 @@
             box-shadow: none;
         }
     }
+    
+    &--social {
+        display: inline-block;
+        vertical-align: middle;
+        height: 51px;
+        width: 152px;
+        margin: 0 10px;
+        
+        i {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    
+    &--fb {
+        background: #3B5998;
+        
+        &:hover {
+            background: #4365AB;
+        }
+    }
+    
+    &--vk {
+        background: #4C6C91;
+        
+        i {
+            top: 48%;
+        }
+        
+        &:hover {
+            background: #59799d;
+        }
+    }
+    
+    &--tw {
+        background: #55ACEE;
+        
+        &:hover {
+            background: #67b8f5;
+        }
+    }
+    
+    &--tg {
+        background: #27A0D5;
+        
+        &:hover {
+            background: #35aee3;
+        }
+    }
 }

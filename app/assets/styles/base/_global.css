@@ -18,7 +18,7 @@ input {
     font-size: 16px;
     color: #000;
     line-height: 24px;
- 
+
     &:focus {
         border-color: $sandy;
     }
@@ -29,6 +29,37 @@ img {
     height: auto;
 }
 
+h1 {
+    font-family: $play;
+    line-height: 50px;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: $bold;
+    line-height: 41px;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: $play;
+    line-height: 25px;
+    font-size: 28px;
+}
+
+quote, .su-quote-inner {
+    font-family: $play;
+    line-height: 35px;
+    font-size: 35px;
+    color: $sandy;
+}
+
+caption {
+    font-family: $light;
+    line-height: 14px;
+    font-size: 14px;
+}
+
 .container-fluid {
     padding-right: 10px;
     padding-left: 10px;
@@ -37,7 +68,7 @@ img {
 .row {
     margin: 0 -10px;
 }
- 
+
 [class*="col-"] {
     padding: 0 10px;
 }
@@ -67,4 +98,10 @@ h1, h2, h3 {
     margin: 0;
     padding: 0;
     font-weight: normal;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }

@@ -1,3 +1,27 @@
 .page-section {
     padding-bottom: 70px;
+    
+    &--pd-t-s {
+        padding-top: 40px;
+    }
+    
+    &--pd-t-l {
+        padding-top: 70px;
+    }
+    
+    &--pd-b-xs {
+        padding-bottom: 5px;
+    }
+    
+    &--pd-b-s {
+        padding-bottom: 40px;
+    }
+    
+    &--light {
+        background: $sandy-lll; 
+    }
+    
+    &--br {
+        border-bottom: 1px solid rgba(174, 150, 123, .25); 
+    }
 }

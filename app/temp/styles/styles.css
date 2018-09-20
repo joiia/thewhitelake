@@ -1790,6 +1790,27 @@ input[type="month"] {
     }img {
     max-width: 100%;
     height: auto;
+}h1 {
+    font-family: 'Playfair Display', serif;
+    line-height: 50px;
+    font-size: 50px;
+}h2 {
+    font-family: Gilam-Bold;
+    line-height: 41px;
+    font-size: 32px;
+}h3 {
+    font-family: 'Playfair Display', serif;
+    line-height: 25px;
+    font-size: 28px;
+}quote, .su-quote-inner {
+    font-family: 'Playfair Display', serif;
+    line-height: 35px;
+    font-size: 35px;
+    color: #AE967B;
+}caption {
+    font-family: Gilam-Book;
+    line-height: 14px;
+    font-size: 14px;
 }.container-fluid {
     padding-right: 10px;
     padding-left: 10px;
@@ -1812,7 +1833,13 @@ input[type="month"] {
     margin: 0;
     padding: 0;
     font-weight: normal;
-}.col-fixed--133 {
+}.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}.container--narrow {
+        max-width: 842px;
+    }.col-fixed--133 {
         flex: 0 0 133px;
         max-width: 100%;
     }.col-fixed--164 {
@@ -1868,6 +1895,34 @@ input[type="month"] {
     }.btn--load-more:hover {
             background: #BBA185;
             box-shadow: none;
+        }.btn--social {
+        display: inline-block;
+        vertical-align: middle;
+        height: 51px;
+        width: 152px;
+        margin: 0 10px;
+    }.btn--social i {
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+        }.btn--fb {
+        background: #3B5998;
+    }.btn--fb:hover {
+            background: #4365AB;
+        }.btn--vk {
+        background: #4C6C91;
+    }.btn--vk i {
+            top: 48%;
+        }.btn--vk:hover {
+            background: #59799d;
+        }.btn--tw {
+        background: #55ACEE;
+    }.btn--tw:hover {
+            background: #67b8f5;
+        }.btn--tg {
+        background: #27A0D5;
+    }.btn--tg:hover {
+            background: #35aee3;
         }.site-header {
     position: absolute;
     z-index: 10000;
@@ -2036,7 +2091,19 @@ input[type="month"] {
     } 
     }.page-section {
     padding-bottom: 70px;
-}.headline {
+}.page-section--pd-t-s {
+        padding-top: 40px;
+    }.page-section--pd-t-l {
+        padding-top: 70px;
+    }.page-section--pd-b-xs {
+        padding-bottom: 5px;
+    }.page-section--pd-b-s {
+        padding-bottom: 40px;
+    }.page-section--light {
+        background: #FBFAF8; 
+    }.page-section--br {
+        border-bottom: 1px solid rgba(174, 150, 123, .25); 
+    }.headline {
     
     font-family: 'Playfair Display', serif;
     font-size: 50px;
@@ -2054,8 +2121,8 @@ input[type="month"] {
         margin-right: auto;
     }.headline--light {
         font-weight: 100;
-    }.headline--mrg-b-s {
-        margin-bottom: .5em;
+    }.headline--mrg-b-l {
+        margin-bottom: 60px;
     }.headline--mrg-b-n {
         margin-top: 0;
     }.search__link { 
@@ -2450,7 +2517,6 @@ input[type="month"] {
     }.sticker {
     position: fixed;
     z-index: 100;
-    background: #fff;
     left: 0;
     top: 182px;
     height: 320px;
@@ -2460,6 +2526,7 @@ input[type="month"] {
     overflow: hidden;
 
 }.sticker__item {
+        background: #fff;
         padding: 30px 25px;  
         border-bottom: 1px solid #F2F2F2;
         transition: all .5s;
@@ -2512,4 +2579,47 @@ input[type="month"] {
         left: auto;
         right: 0;
         border-radius: 3px 0 0 3px;
-    }
+    }.post p, .post i {
+        line-height: 29px;
+        font-size: 20px;
+        margin-bottom: 40px;
+        font-family: Gilam-Book;
+    }.post a {
+        font-family: Gilam-Bold;
+        color: #AE967B;
+        text-decoration: none;
+    }.post h2 {
+        margin-bottom: 19px;
+    }.post quote {
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 70px;
+        display: block;
+    }.post .two-img { 
+        padding-top: 30px;
+        margin-bottom: 70px;
+ 
+    }.post .two-img::after {
+        content: "";
+        clear: both;
+        display: table;
+    }.post .two-img img {
+            float: left;
+            width: 50%;
+            padding-right: 10px;
+        }.post .two-img img:last-child {
+                padding-right: 0;
+                padding-left: 10px;
+            }.post .large-img { 
+        padding-top: 30px;
+        margin: 0 -173px 70px;
+    }.post .large-img::after {
+        content: "";
+        clear: both;
+        display: table;
+    }.post .large-img img {
+           margin-bottom: 15px;
+        }.post .large-img i {
+            display: block;
+            margin-bottom: 0;
+        }

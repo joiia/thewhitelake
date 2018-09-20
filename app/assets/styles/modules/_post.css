@@ -1,0 +1,61 @@
+.post {
+               
+    p, i {
+        line-height: 29px;
+        font-size: 20px;
+        margin-bottom: 40px;
+        font-family: $light;
+    }
+
+    a {
+        font-family: $bold;
+        color: $sandy;
+        text-decoration: none;
+    } 
+
+    h2 {
+        margin-bottom: 19px;
+    }
+
+    quote {
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 70px;
+        display: block;
+    }
+
+    .two-img {
+        @mixin clearfix; 
+        padding-top: 30px;
+        margin-bottom: 70px;
+
+        img {
+            float: left;
+            width: 50%;
+            padding-right: 10px;
+
+            &:last-child {
+                padding-right: 0;
+                padding-left: 10px;
+            }
+        }
+ 
+    }
+
+    .large-img {
+        @mixin clearfix; 
+        padding-top: 30px;
+        margin: 0 -173px 70px; 
+        
+        img {
+           margin-bottom: 15px;
+        }
+        
+        i {
+            display: block;
+            margin-bottom: 0;
+        }
+    }
+    
+
+}
