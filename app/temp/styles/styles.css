@@ -2539,7 +2539,30 @@ input[type="month"] {
         opacity: 0.5;
         line-height: 24px;
         margin-bottom: 22px;
-    }.sticker {
+    }.hero__partner {
+        text-align: center;
+    }.hero__partner-title {
+            font-size: 14px;
+            font-family: Gilam-Book;
+            margin-bottom: 10px;
+        }.hero__partner-logo {
+            background: #D0062A;
+            width: 165px;
+            height: 45px;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: 26px;
+        }.hero__partner-logo img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                        transform: translateX(-50%) translateY(-50%);
+            }.hero__partner-logo a {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }.sticker {
     position: fixed;
     z-index: 100;
     left: 0;

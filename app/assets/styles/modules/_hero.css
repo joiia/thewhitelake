@@ -90,5 +90,36 @@
         line-height: 24px;
         margin-bottom: 22px;
     }
+    
+    &__partner {
+        text-align: center;
+        
+        &-title {
+            font-size: 14px;
+            font-family: $light;
+            margin-bottom: 10px;
+        }
+        &-logo {
+            background: #D0062A;
+            width: 165px;
+            height: 45px;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: 26px;
+            
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+    }
 
 }
