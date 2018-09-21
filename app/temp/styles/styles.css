@@ -1919,6 +1919,7 @@ input[type="month"] {
             top: 50%;
             -webkit-transform: translateY(-50%);
                     transform: translateY(-50%);
+            margin: 0; 
         }.btn--fb {
         background: #3B5998;
     }.btn--fb:hover {
@@ -2620,6 +2621,7 @@ input[type="month"] {
     box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
     border-radius: 0 3px 3px 0;
     overflow: hidden;
+    opacity: 1;
 
 }.sticker__item {
         background: #fff;
@@ -2675,6 +2677,10 @@ input[type="month"] {
         left: auto;
         right: 0;
         border-radius: 3px 0 0 3px;
+    }.sticker--is-hidden {
+        opacity: 0;
+        z-index: -1;
+        height: 0;
     }.post p, .post i {
         line-height: 29px;
         font-size: 20px;
