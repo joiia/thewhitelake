@@ -70,3 +70,9 @@
 
 
 }
+
+.about {
+    .hero__img {
+        border-radius: 3px 3px 0 0;
+    }
+}

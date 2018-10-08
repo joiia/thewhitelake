@@ -3332,6 +3332,8 @@ input[type="month"] {
     }@media (min-width: 992px) {.simple-page .hero {
             height: 500px
     }
+    }.about .hero__img {
+        border-radius: 3px 3px 0 0;
     }.support {
     display: flex;
     justify-content: center;
