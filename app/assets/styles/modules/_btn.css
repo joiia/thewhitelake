@@ -7,20 +7,20 @@
     line-height: 20px;
     display: inline-block;
     transition: all .5s;
-    
-    
-    &:hover {
-        
-    }
 
     &--l {
         font-size: 22px;
         line-height: 1;
         padding: 26px 35px;
         width: 600px;
+        height: 80px;
         font-family: $regular;
         box-shadow: 0px 5px 25px rgba(174, 150, 123, 0.2);
-        
+
+        @mixin atS {
+            height: 81px;
+        }
+
         &:hover {
             box-shadow: none; 
         }
@@ -35,7 +35,7 @@
     &--sandy {
         background: $sandy;
         color: #fff;
-        
+
         &:hover {
             background: $sandy-ll;
         }
@@ -60,62 +60,72 @@
         transform: translateX(-50%);
         transition: all .5s;
         box-shadow: 0px 5px 25px rgba(174, 150, 123, 0.2);
-        
+
         &:hover {
             background: $sandy-ll;
             box-shadow: none;
         }
     }
-    
+
     &--social {
-        display: inline-block;
+        display: block;
         vertical-align: middle;
         height: 51px;
-        width: 152px;
-        margin: 0 10px;
-        
+        width: 267px;
+        margin: 0 auto 15px;
+
+        @mixin atM {
+            display: inline-block;
+            width: 152px;
+            margin: 0 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
         i {
             top: 50%;
             transform: translateY(-50%);
             margin: 0; 
         }
     }
-    
+
     &--fb {
         background: #3B5998;
-        
+
         &:hover {
             background: #4365AB;
         }
     }
-    
+
     &--vk {
         background: #4C6C91;
-        
+
         i {
             top: 48%;
         }
-        
+
         &:hover {
             background: #59799d;
         }
     }
-    
+
     &--tw {
         background: #55ACEE;
-        
-         i {
+
+        i {
             top: 51%;
         }
-        
+
         &:hover {
             background: #67b8f5;
         }
     }
-    
+
     &--tg {
         background: #27A0D5;
-        
+
         &:hover {
             background: #35aee3;
         }

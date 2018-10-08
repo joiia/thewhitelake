@@ -1,18 +1,19 @@
-import $ from 'jquery';
+import jQuery from 'jquery';
 
 class OpenSearch {
     constructor() {
-        this.searchButton = $('.search__btn');
-        this.searchField = $('.search__field');
-        this.searchClose = $('.search__close'); 
-        this.searchInput = $('.search__input'); 
-        this.searchResults = $('.search__results'); 
+        this.searchButton = jQuery('.search__btn');
+        this.searchField = jQuery('.search__field');
+        this.searchClose = jQuery('.search__close'); 
+        this.searchInput = jQuery('.search__input'); 
+        this.searchResults = jQuery('.search__results'); 
+        this.logo = jQuery('.site-header__logo'); 
         this.events();
     }
     
     events() {       
         this.searchButton.click(this.ShowField.bind(this));
-        $(document).keyup(this.KeyPressHandler.bind(this));
+        jQuery(document).keyup(this.KeyPressHandler.bind(this));
         
         this.searchClose.click(this.HideField.bind(this));
         
@@ -29,11 +30,13 @@ class OpenSearch {
     
     ShowField() {
         this.searchField.addClass("search__field--is-visible");
+        this.logo.addClass("site-header__logo--is-unvisible");
         return false;
     }
     
     HideField() {
         this.searchField.removeClass("search__field--is-visible");
+        this.logo.removeClass("site-header__logo--is-unvisible");
         return false; 
     }
     

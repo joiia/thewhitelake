@@ -1,17 +1,34 @@
 .primary-nav {
-    font-family: $regular;
 
     ul {
         margin: 0;
         padding: 0;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        
+        @mixin atL {
+            padding: 0;
+        }
     }
 
     li {
         list-style: none;
-        display: inline-block;
         padding-right: 7px;
+        font-size: 28px;
+        font-family: $bold;
+        display: block;
+        margin-bottom: 15px;
+        line-height: 39px;
 
-        @mixin atM {
+        @mixin atL {
+            line-height: 20px;
+            display: inline-block;
+            font-size: 16px;
+            font-family: $regular;
+            margin-bottom: 0;
+        }
+
+        @mixin atL {
             float: left;
             display: block;
             padding-right: 25px;
@@ -20,16 +37,21 @@
 
     li:last-child {
         padding-right: 0;
-        @mixin atM {
+
+        @mixin atL {
             padding-right: 20px;
         }
     }
 
     a {
         text-decoration: none;
-        color: #fff;
-        opacity: 0.5;
-        transition: all .5s;
+        color: #000;
+        transition: opacity .5s;
+
+        @mixin atL {
+            color: #fff;
+            opacity: 0.5;
+        }
 
         &:hover {
             opacity: 1;

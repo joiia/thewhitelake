@@ -1,25 +1,43 @@
 .form {
     background: #fff;
-    padding: 70px 172px;
+    padding: 30px 20px;
     font-family: $regular;
     width: 1015px;
     max-width: 100%;
     border: 1px solid #f1f1f1;
     border-radius: 3px;
     margin: 0 auto;
-    margin-bottom: 70px;
-    
+    margin-bottom: 30px;
+    text-align: center;
+
+    @mixin atL {
+        text-align: left;
+        padding: 70px 172px;
+        margin-bottom: 70px;
+
+    }
+
     &__login {
         color: $grey-ll;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
+
+        @mixin atL {
+            margin-bottom: 40px;
+        }
     }
-    
+
     &__login-icons {
-        display: inline-block;
+        display: block;
         vertical-align: middle;
-        padding-left: 20px;
+        padding-top: 20px;
+
+        @mixin atL {
+            display: inline-block;
+            padding-left: 20px;
+            padding-top: 0;
+        }
     }
-    
+
     &__login-icon {
         background: $sandy;
         width: 35px;
@@ -29,38 +47,44 @@
         margin-right: 8px;
         position: relative;
         display: inline-block;
-        
+
         i {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
         }
-        
+
         &:hover {
             background: $sandy-l;
         }
     }
-    
+
     input, textarea {
         width: 100%;
         margin-bottom: 20px;
         height: 56px;
         border-radius: 2px;
-        
+
         &:focus {
             border-color: $sandy;
         }
     }
-    
+
     textarea {
         height: 132px;
     }
-    
+
     .btn {
-        width: 188px;
+        width: 100%;
         border: none;
         height: 54px;
         float: right;
+        margin-bottom: 0;
+
+        @mixin atL {
+            width: 188px;
+            margin-bottom: 20px;
+        }
     }
 }

@@ -1,10 +1,15 @@
 .post {
-               
+
     p, i {
         line-height: 29px;
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
         font-family: $light;
+
+        @mixin atL {
+            margin-bottom: 40px;
+
+        }
     }
 
     a {
@@ -20,42 +25,77 @@
     quote {
         text-align: center;
         padding-top: 30px;
-        margin-bottom: 70px;
+        margin-bottom: 65px;
         display: block;
+
+        @mixin atL {
+            margin-bottom: 70px;
+        }
     }
 
     .two-img {
         @mixin clearfix; 
-        padding-top: 30px;
-        margin-bottom: 70px;
+        margin-bottom: 60px;
+
+        @mixin atL {
+            padding-top: 30px;
+            margin-bottom: 70px;
+
+        }
 
         img {
             float: left;
-            width: 50%;
-            padding-right: 10px;
+            width: 100%;
+            padding-bottom: 20px;
+
+            @mixin atM {
+                width: 50%;
+                padding-right: 10px;
+                padding-bottom: 0;
+            }
 
             &:last-child {
                 padding-right: 0;
-                padding-left: 10px;
+                padding-left: 0;
+                padding-bottom: 0;
+
+                @mixin atM {
+                    padding-left: 10px;
+                }
             }
         }
- 
+
+
+
     }
 
     .large-img {
         @mixin clearfix; 
         padding-top: 30px;
-        margin: 0 -173px 70px; 
+        margin: 0 0 65px;
         
-        img {
-           margin-bottom: 15px;
+        @mixin at1200 {
+            margin: 0 -50px 70px;
         }
-        
+
+        @mixin atXL {
+            margin: 0 -173px 70px;
+        }
+
+        img {
+            margin-bottom: 12px;
+
+            @mixin atL {
+                margin-bottom: 15px;
+
+            }
+        }
+
         i {
             display: block;
             margin-bottom: 0;
         }
     }
-    
+
 
 }

@@ -14,7 +14,7 @@
         <!-- endbuild -->
     </head>
 
-    <body>
+    <body class="home">
 
         <header class="site-header">
             <div class="container-fluid">
@@ -26,7 +26,11 @@
                     </div>
                     <div class="site-header__col-2">
                         <div class="site-header__center">
+                            <div class="site-header__menu-btn">
+                                Меню
+                            </div>
                             <div class="site-header__menu primary-nav">
+                                <div class="site-header__menu-close"></div>
                                 <ul>
                                     <li class="current-menu-item"><a href="">Все</a></li>
                                     <li><a href="">Истории</a></li>
@@ -35,6 +39,14 @@
                                     <li><a href="">Места</a></li>
                                     <li><a href="">Тренды</a></li>
                                 </ul>
+                                <div class="site-header__social">
+                                    <a class="site-header__social-link site-header__social-link--fb" href="">
+                                        <i class="icon icon--fb-m"></i><i class="icon icon--fb-m-w"></i>
+                                    </a>
+                                    <a class="site-header__social-link site-header__social-link--insta" href="">
+                                        <i class="icon icon--insta-m"></i><i class="icon icon--insta-m-w"></i>
+                                    </a>
+                                </div>
                             </div>
                             <div class="site-header__search">
                                 <div class="search__btn search__link link">Поиск</div>
@@ -70,7 +82,7 @@
 
                         <div class="feed__row">
                             <div class="row">
-                                <div class="col col-12 col-lg-6"> 
+                                <div class="col col-12 col-lg-6 col-xl-6"> 
                                     <div class="feed-item feed-item--l">
                                         <a href="article.html">
                                             <div class="feed-item__img"><img src="assets/images/1.jpg" alt=""></div>
@@ -86,7 +98,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col col-12 col-lg-6">
+                                <div class="col col-12 col-lg-6 col-xl-6">
                                     <div class="row">
                                         <div class="col col-12 col-xl-6">
                                             <div class="feed-item">
@@ -161,9 +173,8 @@
                             </div>
                         </div>
                         <div class="feed__row">
-
                             <div class="row">
-                                <div class="col col-12 col-md-6">
+                                <div class="col col-12 col-lg-6 col-xl-6">
                                     <div class="row">
                                         <div class="col col-12 col-md-6 d-none d-xl-block">
                                             <div class="feed-item">
@@ -235,8 +246,194 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col col-12 col-lg-6 col-xl-6"> 
+                                    <div class="feed-item feed-item--l">
+                                        <a href="article-partner.html">
+                                            <div class="feed-item__img"><img src="assets/images/10.jpg" alt=""></div>
+                                            <div class="feed-item__text">
+                                                <div class="feed-item__counters">
+                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>523
+                                                    </div>
+                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>2
+                                                    </div>
+                                                </div>
+                                                <h1 class="feed-item__title headline">Лучшие книги о путешествиях</h1> 
 
-                                <div class="col col-12 col-md-6"> 
+                                            </div>
+                                            <div class="feed-item__label">Партнерский материал</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feed__row">
+                            <div class="row">
+                                <div class="col col-12 col-lg-6 col-xl-6"> 
+                                    <div class="feed-item feed-item--l">
+                                        <a href="article.html">
+                                            <div class="feed-item__img"><img src="assets/images/1.jpg" alt=""></div>
+                                            <div class="feed-item__text">
+                                                <div class="feed-item__counters">
+                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                    </div>
+                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                    </div>
+                                                </div>
+                                                <h1 class="feed-item__title headline">Гастрономическое путешествие по Италии</h1> 
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-lg-6 col-xl-6">
+                                    <div class="row">
+                                        <div class="col col-12 col-xl-6">
+                                            <div class="feed-item">
+                                                <a href="article-partner.html">
+                                                    <div class="feed-item__img"><img src="assets/images/2.jpg" alt=""></div>
+                                                    <div class="feed-item__text">
+                                                        <div class="feed-item__counters">
+                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                            </div>
+                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="feed-item__title headline headline--s">Кто главный по смузи в России?</h3> 
+                                                    </div>
+                                                    <div class="feed-item__label">Партнерский материал</div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-12 col-md-6 d-none d-xl-block">
+                                            <div class="feed-item">
+                                                <a href="article.html">
+                                                    <div class="feed-item__img"><img src="assets/images/3.jpg" alt=""></div>
+                                                    <div class="feed-item__text">
+                                                        <div class="feed-item__counters">
+                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>642
+                                                            </div>
+                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>0
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="feed-item__title headline headline--s">Скандинавский стиль в интерьере</h3> 
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-12 col-xl-6">
+                                            <div class="feed-item">
+                                                <a href="article.html">
+                                                    <div class="feed-item__img"><img src="assets/images/4.jpg" alt=""></div>
+                                                    <div class="feed-item__text">
+                                                        <div class="feed-item__counters">
+                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                            </div>
+                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="feed-item__title headline headline--s">Путевые заметки. Минск</h3> 
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-12 col-md-6 d-none d-xl-block">
+                                            <div class="feed-item">
+                                                <a href="article.html">
+                                                    <div class="feed-item__img"><img src="assets/images/5.jpg" alt=""></div>
+                                                    <div class="feed-item__text">
+                                                        <div class="feed-item__counters">
+                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                            </div>
+                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="feed-item__title headline headline--s">Cтабильность на приключения </h3> 
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed__row">
+                            <div class="row">
+                                <div class="col col-12 col-lg-6 col-xl-6">
+                                    <div class="row">
+                                        <div class="col col-12 col-md-6 d-none d-xl-block">
+                                            <div class="feed-item">
+                                                <a href="article.html">
+                                                    <div class="feed-item__img"><img src="assets/images/6.jpg" alt=""></div>
+                                                    <div class="feed-item__text">
+                                                        <div class="feed-item__counters">
+                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                            </div>
+                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="feed-item__title headline headline--s">Небольшой Переславль </h3> 
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-12 col-xl-6">
+                                            <div class="feed-item">
+                                                <a href="article.html">
+                                                    <div class="feed-item__img"><img src="assets/images/7.jpg" alt=""></div>
+                                                    <div class="feed-item__text">
+                                                        <div class="feed-item__counters">
+                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                            </div>
+                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="feed-item__title headline headline--s">Рождественская Москва</h3> 
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-12 col-md-6 d-none d-xl-block">
+                                            <div class="feed-item">
+                                                <a href="article.html">
+                                                    <div class="feed-item__img"><img src="assets/images/8.jpg" alt=""></div>
+                                                    <div class="feed-item__text">
+                                                        <div class="feed-item__counters">
+                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                            </div>
+                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="feed-item__title headline headline--s">Переезд в Новую Зеландию</h3> 
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-12 col-xl-6">
+                                            <div class="feed-item">
+                                                <a href="article.html">
+                                                    <div class="feed-item__img"><img src="assets/images/9.jpg" alt=""></div>
+                                                    <div class="feed-item__text">
+                                                        <div class="feed-item__counters">
+                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
+                                                            </div>
+                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="feed-item__title headline headline--s">Путевые заметки. Македония</h3> 
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-lg-6 col-xl-6"> 
                                     <div class="feed-item feed-item--l">
                                         <a href="article-partner.html">
                                             <div class="feed-item__img"><img src="assets/images/10.jpg" alt=""></div>
@@ -258,9 +455,9 @@
                         </div>
                         <div class="feed__row">
                             <div class="row">
-                                <div class="col col-12 col-md-6"> 
+                                <div class="col col-12 col-lg-6 col-xl-6"> 
                                     <div class="feed-item feed-item--l">
-                                        <a href="">
+                                        <a href="article.html">
                                             <div class="feed-item__img"><img src="assets/images/1.jpg" alt=""></div>
                                             <div class="feed-item__text">
                                                 <div class="feed-item__counters">
@@ -274,11 +471,11 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col col-12 col-md-6">
+                                <div class="col col-12 col-lg-6 col-xl-6">
                                     <div class="row">
-                                        <div class="col col-12 col-md-6">
+                                        <div class="col col-12 col-xl-6">
                                             <div class="feed-item">
-                                                <a href="">
+                                                <a href="article-partner.html">
                                                     <div class="feed-item__img"><img src="assets/images/2.jpg" alt=""></div>
                                                     <div class="feed-item__text">
                                                         <div class="feed-item__counters">
@@ -294,9 +491,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="col col-12 col-md-6">
+                                        <div class="col col-12 col-md-6 d-none d-xl-block">
                                             <div class="feed-item">
-                                                <a href="">
+                                                <a href="article.html">
                                                     <div class="feed-item__img"><img src="assets/images/3.jpg" alt=""></div>
                                                     <div class="feed-item__text">
                                                         <div class="feed-item__counters">
@@ -311,9 +508,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="col col-12 col-md-6">
+                                        <div class="col col-12 col-xl-6">
                                             <div class="feed-item">
-                                                <a href="">
+                                                <a href="article.html">
                                                     <div class="feed-item__img"><img src="assets/images/4.jpg" alt=""></div>
                                                     <div class="feed-item__text">
                                                         <div class="feed-item__counters">
@@ -328,9 +525,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="col col-12 col-md-6">
+                                        <div class="col col-12 col-md-6 d-none d-xl-block">
                                             <div class="feed-item">
-                                                <a href="">
+                                                <a href="article.html">
                                                     <div class="feed-item__img"><img src="assets/images/5.jpg" alt=""></div>
                                                     <div class="feed-item__text">
                                                         <div class="feed-item__counters">
@@ -349,13 +546,12 @@
                             </div>
                         </div>
                         <div class="feed__row">
-
                             <div class="row">
-                                <div class="col col-12 col-md-6">
+                                <div class="col col-12 col-lg-6 col-xl-6">
                                     <div class="row">
-                                        <div class="col col-12 col-md-6">
+                                        <div class="col col-12 col-md-6 d-none d-xl-block">
                                             <div class="feed-item">
-                                                <a href="">
+                                                <a href="article.html">
                                                     <div class="feed-item__img"><img src="assets/images/6.jpg" alt=""></div>
                                                     <div class="feed-item__text">
                                                         <div class="feed-item__counters">
@@ -371,9 +567,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="col col-12 col-md-6">
+                                        <div class="col col-12 col-xl-6">
                                             <div class="feed-item">
-                                                <a href="">
+                                                <a href="article.html">
                                                     <div class="feed-item__img"><img src="assets/images/7.jpg" alt=""></div>
                                                     <div class="feed-item__text">
                                                         <div class="feed-item__counters">
@@ -388,9 +584,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="col col-12 col-md-6">
+                                        <div class="col col-12 col-md-6 d-none d-xl-block">
                                             <div class="feed-item">
-                                                <a href="">
+                                                <a href="article.html">
                                                     <div class="feed-item__img"><img src="assets/images/8.jpg" alt=""></div>
                                                     <div class="feed-item__text">
                                                         <div class="feed-item__counters">
@@ -405,9 +601,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="col col-12 col-md-6">
+                                        <div class="col col-12 col-xl-6">
                                             <div class="feed-item">
-                                                <a href="">
+                                                <a href="article.html">
                                                     <div class="feed-item__img"><img src="assets/images/9.jpg" alt=""></div>
                                                     <div class="feed-item__text">
                                                         <div class="feed-item__counters">
@@ -423,10 +619,9 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col col-12 col-md-6"> 
+                                <div class="col col-12 col-lg-6 col-xl-6"> 
                                     <div class="feed-item feed-item--l">
-                                        <a href="">
+                                        <a href="article-partner.html">
                                             <div class="feed-item__img"><img src="assets/images/10.jpg" alt=""></div>
                                             <div class="feed-item__text">
                                                 <div class="feed-item__counters">
@@ -444,194 +639,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="feed__row">
-                            <div class="row">
-                                <div class="col col-12 col-md-6"> 
-                                    <div class="feed-item feed-item--l">
-                                        <a href="">
-                                            <div class="feed-item__img"><img src="assets/images/1.jpg" alt=""></div>
-                                            <div class="feed-item__text">
-                                                <div class="feed-item__counters">
-                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
-                                                    </div>
-                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
-                                                    </div>
-                                                </div>
-                                                <h1 class="feed-item__title headline">Гастрономическое путешествие по Италии</h1> 
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col col-12 col-md-6">
-                                    <div class="row">
-                                        <div class="col col-12 col-md-6">
-                                            <div class="feed-item">
-                                                <a href="">
-                                                    <div class="feed-item__img"><img src="assets/images/2.jpg" alt=""></div>
-                                                    <div class="feed-item__text">
-                                                        <div class="feed-item__counters">
-                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
-                                                            </div>
-                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="feed-item__title headline headline--s">Кто главный по смузи в России?</h3> 
-                                                    </div>
-                                                    <div class="feed-item__label">Партнерский материал</div>
-                                                </a>
-                                            </div>
-                                        </div>
 
-                                        <div class="col col-12 col-md-6">
-                                            <div class="feed-item">
-                                                <a href="">
-                                                    <div class="feed-item__img"><img src="assets/images/3.jpg" alt=""></div>
-                                                    <div class="feed-item__text">
-                                                        <div class="feed-item__counters">
-                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>642
-                                                            </div>
-                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>0
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="feed-item__title headline headline--s">Скандинавский стиль в интерьере</h3> 
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col col-12 col-md-6">
-                                            <div class="feed-item">
-                                                <a href="">
-                                                    <div class="feed-item__img"><img src="assets/images/4.jpg" alt=""></div>
-                                                    <div class="feed-item__text">
-                                                        <div class="feed-item__counters">
-                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
-                                                            </div>
-                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="feed-item__title headline headline--s">Путевые заметки. Минск</h3> 
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col col-12 col-md-6">
-                                            <div class="feed-item">
-                                                <a href="">
-                                                    <div class="feed-item__img"><img src="assets/images/5.jpg" alt=""></div>
-                                                    <div class="feed-item__text">
-                                                        <div class="feed-item__counters">
-                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
-                                                            </div>
-                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="feed-item__title headline headline--s">Cтабильность на приключения </h3> 
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feed__row">
-
-                            <div class="row">
-                                <div class="col col-12 col-md-6">
-                                    <div class="row">
-                                        <div class="col col-12 col-md-6">
-                                            <div class="feed-item">
-                                                <a href="">
-                                                    <div class="feed-item__img"><img src="assets/images/6.jpg" alt=""></div>
-                                                    <div class="feed-item__text">
-                                                        <div class="feed-item__counters">
-                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
-                                                            </div>
-                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="feed-item__title headline headline--s">Небольшой Переславль </h3> 
-                                                    </div>
-
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col col-12 col-md-6">
-                                            <div class="feed-item">
-                                                <a href="">
-                                                    <div class="feed-item__img"><img src="assets/images/7.jpg" alt=""></div>
-                                                    <div class="feed-item__text">
-                                                        <div class="feed-item__counters">
-                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
-                                                            </div>
-                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="feed-item__title headline headline--s">Рождественская Москва</h3> 
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col col-12 col-md-6">
-                                            <div class="feed-item">
-                                                <a href="">
-                                                    <div class="feed-item__img"><img src="assets/images/8.jpg" alt=""></div>
-                                                    <div class="feed-item__text">
-                                                        <div class="feed-item__counters">
-                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
-                                                            </div>
-                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="feed-item__title headline headline--s">Переезд в Новую Зеландию</h3> 
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col col-12 col-md-6">
-                                            <div class="feed-item">
-                                                <a href="">
-                                                    <div class="feed-item__img"><img src="assets/images/9.jpg" alt=""></div>
-                                                    <div class="feed-item__text">
-                                                        <div class="feed-item__counters">
-                                                            <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>301
-                                                            </div>
-                                                            <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>1
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="feed-item__title headline headline--s">Путевые заметки. Македония</h3> 
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col col-12 col-md-6"> 
-                                    <div class="feed-item feed-item--l">
-                                        <a href="">
-                                            <div class="feed-item__img"><img src="assets/images/10.jpg" alt=""></div>
-                                            <div class="feed-item__text">
-                                                <div class="feed-item__counters">
-                                                    <div class="feed-item__views feed-item__counter"><i class="icon icon--views"></i>523
-                                                    </div>
-                                                    <div class="feed-item__comments feed-item__counter"><i class="icon icon--comments"></i>2
-                                                    </div>
-                                                </div>
-                                                <h1 class="feed-item__title headline">Лучшие книги о путешествиях</h1> 
-
-                                            </div>
-                                            <div class="feed-item__label">Партнерский материал</div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
 
@@ -663,7 +671,7 @@
         <footer class="site-footer">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-md-11">
+                    <div class="col-12 col-lg-10">
                         <div class="site-footer__menu">
                             <ul>
                                 <li>
@@ -679,10 +687,10 @@
                             Интернет-журнал The White Lake. Использование материалов разрешено только с предварительного согласия редакции.
                         </div>
                         <div class="site-footer__design">
-                            <a href="">design</a>
+                            <a href="">Design</a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-1">
+                    <div class="col-12 col-md-2">
                         <div class="site-footer__social right">
                             <a class="site-footer__social-link site-footer__social-link--fb" href="">
                                 <i class="icon icon--fb-s"></i><i class="icon icon--fb-s-w"></i>
@@ -696,11 +704,6 @@
             </div>
         </footer>
 
-        <div class="modal">
-            <div class="modal__inner">
-            </div>
-            <div class="modal__close">X</div>
-        </div>
 
         <!-- build:js assets/scripts/App.js -->
         <script src="temp/scripts/App.js"></script>

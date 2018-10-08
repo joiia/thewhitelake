@@ -1,36 +1,52 @@
 .headline {
-    
+
     font-family: $play;
-    font-size: 50px;
-    line-height: 1;
-    
-    @mixin atS {} 
-    
+    font-size: 25px;
+    line-height: 28px;
+
+
+    @mixin atS {
+        font-size: 50px;
+        line-height: 1;
+    } 
+
     &--centered {
         text-align: center;
     }
-    
+
     &--s {
         font-size: 25px;
         line-height: 28px;
     }
-    
+
     &--narrow {
         max-width: 500px;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     &--light {
         font-weight: 100;
     }
-    
+
     &--mrg-b-l {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
+        
+        @mixin atL {
+            margin-bottom: 60px;
+        } 
     }
-    
+
     &--mrg-b-n {
         margin-top: 0;
     }
-    
+
+    &--pd-t-m {
+        padding-top: 10px;
+
+        @mixin atL {
+            padding-top: 0;
+        } 
+    }
+
 }

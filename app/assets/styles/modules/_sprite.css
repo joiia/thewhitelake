@@ -2,11 +2,11 @@
 
 
         .icon {
-            background-image: url('../../assets/images/sprites/sprite-2223f742.svg');
+            background-image: url('../../assets/images/sprites/sprite-dcc04737.svg');
         }
 
         .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-2223f742.png');
+            background-image: url('../../assets/images/sprites/sprite-dcc04737.png');
         }
 
         
@@ -14,79 +14,103 @@
     .icon--arrows {
         width: 19px; 
         height: 24px;
-        background-position: 84.21052631578948% 0;  
+        background-position: 0 62.5%;  
     }
 
     .icon--arrows-w {
         width: 19px; 
         height: 24px;
-        background-position: 84.21052631578948% 32.87671232876713%;  
+        background-position: 76.92307692307692% 0;  
     }
 
     .icon--close {
         width: 18px; 
         height: 18px;
-        background-position: 0 84.81012658227849%;  
+        background-position: 76.19047619047619% 27.906976744186046%;  
     }
 
     .icon--comments {
         width: 14px; 
         height: 13px;
-        background-position: 99% 70.23809523809524%;  
+        background-position: 27.522935779816514% 97.8021978021978%;  
     }
 
     .icon--fb {
         width: 13px; 
         height: 25px;
-        background-position: 53.46534653465346% 0;  
+        background-position: 49.09090909090909% 27.848101265822784%;  
+    }
+
+    .icon--fb-m {
+        width: 13px; 
+        height: 23px;
+        background-position: 90% 54.32098765432099%;  
+    }
+
+    .icon--fb-m-w {
+        width: 13px; 
+        height: 23px;
+        background-position: 90% 25.925925925925927%;  
     }
 
     .icon--fb-s {
         width: 8px; 
         height: 14px;
-        background-position: 93.39622641509433% 54.21686746987952%;  
+        background-position: 58.26086956521739% 55.55555555555556%;  
     }
 
     .icon--fb-s-w {
         width: 8px; 
         height: 14px;
-        background-position: 93.39622641509433% 86.74698795180723%;  
+        background-position: 97.3913043478261% 48.888888888888886%;  
     }
 
     .icon--fb-w {
         width: 13px; 
         height: 25px;
-        background-position: 66.33663366336634% 0;  
+        background-position: 60.90909090909091% 27.848101265822784%;  
     }
 
     .icon--fb-xs-w {
         width: 9px; 
         height: 15px;
-        background-position: 94.28571428571429% 18.29268292682927%;  
+        background-position: 98.24561403508773% 23.59550561797753%;  
+    }
+
+    .icon--insta-m {
+        width: 26px; 
+        height: 26px;
+        background-position: 0 30.76923076923077%;  
+    }
+
+    .icon--insta-m-w {
+        width: 26px; 
+        height: 26px;
+        background-position: 28.8659793814433% 28.205128205128204%;  
     }
 
     .icon--insta-s {
         width: 15px; 
         height: 15px;
-        background-position: 100% 0;  
+        background-position: 13.88888888888889% 100%;  
     }
 
     .icon--insta-s-w {
         width: 15px; 
         height: 15px;
-        background-position: 100% 36.58536585365854%;  
+        background-position: 0 100%;  
     }
 
     .icon--tg {
         width: 26px; 
         height: 22px;
-        background-position: 31.818181818181817% 0;  
+        background-position: 55.670103092783506% 0;  
     }
 
     .icon--tg-w {
         width: 26px; 
         height: 22px;
-        background-position: 0 32%;  
+        background-position: 28.8659793814433% 0;  
     }
 
     .icon--tg-wb {
@@ -98,47 +122,47 @@
     .icon--tw {
         width: 24px; 
         height: 21px;
-        background-position: 0 60.526315789473685%;  
+        background-position: 19.19191919191919% 60.24096385542169%;  
     }
 
     .icon--tw-w {
         width: 24px; 
         height: 21px;
-        background-position: 28.88888888888889% 31.57894736842105%;  
+        background-position: 100% 0;  
     }
 
     .icon--tw-xs-w {
         width: 19px; 
         height: 15px;
-        background-position: 84.21052631578948% 58.53658536585366%;  
+        background-position: 95.1923076923077% 75.28089887640449%;  
     }
 
     .icon--views {
         width: 17px; 
         height: 12px;
-        background-position: 0 100%;  
+        background-position: 22.641509433962263% 80.43478260869566%;  
     }
 
     .icon--vk {
         width: 24px; 
         height: 15px;
-        background-position: 53.333333333333336% 56.09756097560975%;  
+        background-position: 0 83.14606741573034%;  
     }
 
     .icon--vk-s-w {
         width: 17px; 
         height: 11px;
-        background-position: 36.08247422680412% 77.90697674418605%;  
+        background-position: 75.47169811320755% 56.98924731182796%;  
     }
 
     .icon--vk-w {
         width: 24px; 
         height: 15px;
-        background-position: 26.666666666666668% 56.09756097560975%;  
+        background-position: 43.43434343434343% 56.17977528089887%;  
     }
 
     .icon--vk-xs-w {
         width: 17px; 
         height: 11px;
-        background-position: 18.556701030927837% 77.90697674418605%;  
+        background-position: 75.47169811320755% 45.16129032258065%;  
     }

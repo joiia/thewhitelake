@@ -2,4 +2,9 @@
     width: 842px;
     margin: 0 auto;
     max-width: 100%;
+    padding: 0 5px;
+    
+    @mixin atL {
+        padding: 0;
+    }
 }

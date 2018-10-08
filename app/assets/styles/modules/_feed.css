@@ -1,6 +1,10 @@
 .feed {
     &__container {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
+        
+        @mixin atS {
+            margin-bottom: 25px;
+        }
     }
 
     &__row {

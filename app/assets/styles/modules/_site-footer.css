@@ -1,15 +1,29 @@
 .site-footer{
+
+    @mixin atL {
+        padding-top: 0;
+    }
+
     &__menu {
         font-size: 16px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         font-family: $regular;
+        text-align: center;
+
+        @mixin atL {
+            text-align: left;
+            margin-bottom: 30px;
+        }
 
         ul {
             margin: 0;
             padding: 0;
-            padding-bottom: 30px;
-            border-bottom: 1px solid $grey-lll;
             display: inline-block;
+
+            @mixin atL {
+                padding-bottom: 30px;
+                border-bottom: 1px solid $grey-lll;
+            }
         }
 
         li {
@@ -29,10 +43,18 @@
 
             &:first-child {
                 a {
-                    color: $black !important;
+                    color: $grey !important;
+
+                    @mixin atS {
+                        color: $black !important;
+                    }
 
                     &:hover {
-                        color: $black-l !important;
+                        color: rgba(0, 0, 0, 0.4) !important;
+
+                        @mixin atS {
+                            color: $black-l !important;
+                        }
                     }
                 }
             }
@@ -47,12 +69,25 @@
         color: $grey-ll;
         font-size: 14px;
         line-height: 22px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        @mixin atL {
+            text-align: left;
+            margin-bottom: 25px;
+        }
     }
 
     &__design {
         font-size: 12px;
         color: $black;
+        text-align: center;
+        padding-bottom: 65px;
+
+        @mixin atL {
+            text-align: left;
+            padding-bottom: 0;
+        }
 
         a {
             color: $black;
@@ -62,6 +97,11 @@
     }
 
     &__social {
+        display: none;
+
+        @mixin atL {
+            display: block;
+        }
 
         i {
             position: absolute;
@@ -83,7 +123,7 @@
             background-color: $grey-l;
             margin-left: 10px;
             display: inline-block;
-            transition: all .5s;
+            transition: all .5s !important;
 
             &:hover {
                 background: $sandy;

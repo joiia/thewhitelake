@@ -1,41 +1,97 @@
 .site-header {
-    position: absolute;
     z-index: 10000;
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 23px;
-    line-height: 20px;
-    
+    padding-top: 20px;
+    height: 119px;
+
+    @mixin atL {
+        position: absolute;
+        padding-top: 23px;
+        line-height: 20px;
+        height: auto;
+    }
+
     a {
-        color: #fff;
+        color: #000;
         text-decoration: none;
+
+        @mixin atL {
+            color: #fff;
+        }
     }
-    
+
     &__col-1 {
-        flex: 0 0 133px;
-        max-width: 100%;
+        position: absolute;
+        width: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        padding: 0 10px !important;
+        z-index: 100;
+
+        @mixin atL {
+            position: static;
+            flex: 0 0 133px;
+            max-width: 100%;
+            width: auto;
+            transform: none;
+            left: inherit;
+            padding: 0 !important;
+        }
     }
-    
+
     &__col-2 {
-        flex: 1 1 auto;
+        width: 100%;
+        padding: 0 10px !important;
+
+        @mixin atL {
+            flex: 1 1 auto;
+            padding: 0 !important;
+            width: auto;
+        }
     }
-    
+
     &__col-3 {
-        flex: 0 0 164px;
-        max-width: 100%;
+        display: none;
+
+        @mixin atL {
+            display: block;
+            flex: 0 0 133px;
+            max-width: 100%;
+            padding: 0;
+        }
     }
 
     &__logo {
-        background: url('../../assets/images/logo.svg');
+        background: url('../../assets/images/logo--b.png');
+        background: url('../../assets/images/logo--b.svg');
         width: 39px;
         height: 54px;
-        margin-left: 47px;
+        margin: 0 auto;
+        transition: opacity .5s;
+
+        @mixin atL {
+            margin: 0 0 0 47px;
+            background: url('../../assets/images/logo.png');
+            background: url('../../assets/images/logo.svg');
+        }
 
         a {
             display: block;
             width: 100%;
             height: 100%;
+        }
+
+        &--is-unvisible {
+            opacity: 0;
+            z-index: -1;
+
+            @mixin atL {
+                opacity: 1;
+                z-index: 100;
+            }
         }
     }
 
@@ -44,12 +100,68 @@
         justify-content: space-between;
         position: relative;
         align-content: center;
-        padding-top: 9px;
+        padding: 5px 20px 0 20px;
+
+
+        @mixin atL {
+            padding: 9px 0 0;
+        }
     }
 
-    &__menu {
-        padding: 10px 0;
+
+    &__menu-close {
+        background: url('../../assets/images/close.png') no-repeat;
+        background: url('../../assets/images/close.svg') no-repeat;
+        display: block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        display: none;
+
     }
+
+
+    &__menu { 
+        padding: 10px 0;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.5s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        padding: 45px 30px;
+
+        @mixin atS {
+            padding: 45px;
+        }
+
+        @mixin atL {
+            opacity: 1;
+            z-index: 1;
+            transition: none;
+            position: static;
+            padding: 10px 0;
+            background: transparent;
+            height: auto;
+        }
+
+
+        &--is-visible {
+            opacity: 1;
+            z-index: 10000;
+            height: 100vh;
+            overflow-y: auto;
+            
+            .site-header__menu-close {
+                display: block;
+            }
+        }
+    }
+
 
     &__search {
         padding: 10px 0;
@@ -57,25 +169,118 @@
 
     &__btn {
         padding-top: 9px;
-        font-family: $regular;
         cursor: pointer;
-        color: #fff;
-        opacity: 0.5;
-        transition: all .5s;
+        font-family: $bold;
+        font-size: 28px;
         display: inline-block;
-        margin-right: 30px;
-        float: right;
+        margin-bottom: 65px;
+
+        @mixin atL {
+            font-size: 16px;
+            font-family: $regular;
+            color: #fff;
+            float: right;
+            opacity: 0.5;
+            transition: all .5s;
+        }
+
+        @mixin atL {
+            margin-right: 30px;
+        }
 
         &:hover {
             opacity: 1;
         }
 
         .btn {
-            height: 44px;
-            border-color: rgba(255, 255, 255, 0.5);
+            line-height: 39px;
+            border: 2px solid #000;
+            padding: 15px 35px;
+
+            @mixin atL {
+                padding: 10px 35px;
+                height: 44px;
+                line-height: inherit;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+            }
+
         }
     }
 
+    &__menu-btn {
+        cursor: pointer;
+        font-family: $regular;
+        opacity: 0.5;
+        transition: all .5s;
+        padding: 10px 0;
+
+        @mixin atL {
+            display: none;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .row {
+        position: relative;
+
+        @mixin atL {
+            position: static;
+        }
+    }
+
+    &__social {
+        margin-bottom: 156px;
+
+        @mixin atL {
+            display: none;
+        }
+        a {
+            margin: 0;
+            margin-right: 15px;
+        }
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            transition: all .5s;
+
+            &:last-child {
+                opacity: 0;
+            }
+        }
+
+        &-link {
+            position: relative;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: $grey-l;
+            margin-left: 10px;
+            display: inline-block;
+            transition: all .5s !important;
+
+            &:hover {
+                background: $sandy;
+
+                i {
+                    opacity: 0;
+
+                    &:last-child {
+                        opacity: 1;
+                    }
+                }
+            }
+
+
+
+        }
+
+
+    }
 
 }
 

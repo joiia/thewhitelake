@@ -1,9 +1,9 @@
 .simple-page {
-    
+
     h2 {
         margin-bottom: 19px;
     }
-    
+
     p {
         font-size: 20px;
         line-height: 29px;
@@ -13,6 +13,60 @@
         color: $sandy;
         font-family: $bold;
     }
-    
-    
+
+    .hero {
+        height: auto;
+
+        &__img {
+            position: absolute;
+            z-index: 0;
+            height: 100%;
+            width: 100%;
+
+            img {
+                height: 100%;
+                width: auto;
+                max-width: 10000px;
+                transform: translateX(-50%);
+
+                @mixin atL {
+                    width: 100%;
+                    height: auto;
+                    max-width: 100%;
+                    transform: none;
+                }
+            }
+        }
+
+        &__content {
+            width: 800px;
+            margin: 0 auto;
+            max-width: 90%;
+            max-width: calc(100% - 20px);
+            padding: 25px 15px;
+            hyphens: auto;
+            margin-bottom: 70px;
+            position: relative;
+            top: inherit;
+            left: inherit;
+            transform: none;
+            margin-top: 65px;
+
+            @mixin atL {
+                width: 842px;
+                position: absolute;
+                top: 157px !important;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0;
+                padding: 28px 40px 38px;
+            }
+        }
+        
+        @mixin atL {
+            height: 500px;
+        }
+    }
+
+
 }

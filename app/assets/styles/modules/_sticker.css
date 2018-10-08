@@ -9,6 +9,11 @@
     border-radius: 0 3px 3px 0;
     overflow: hidden;
     opacity: 1;
+    display: none;
+    
+    @mixin atL {
+        display: block;
+    }
 
     &__item {
         background: #fff;
@@ -75,7 +80,7 @@
             height: 80px;
             text-align: center;
         }
-        
+
     }
 
     &--right {
@@ -83,11 +88,16 @@
         right: 0;
         border-radius: 3px 0 0 3px;
     }
-    
-    &--is-hidden {
-        opacity: 0;
-        z-index: -1;
-        height: 0;
+
+    &--is-fixed {
+        position: absolute;
+        left: -40px;
     }
 
+    &--right {
+        &.sticker--is-fixed {
+            left: inherit;
+            right: -40px;
+        }
+    }
 }

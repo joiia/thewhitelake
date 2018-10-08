@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import jQuery from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
 
 class RevealOnScroll {
@@ -21,7 +21,7 @@ class RevealOnScroll {
             var waypoint = new Waypoint({
               element: currentItem,
               handler: function() {
-                $(currentItem).addClass('reveal-item--is-visible');
+                jQuery(currentItem).addClass('reveal-item--is-visible');
               },
               offset: that.offsetPercentage
                 

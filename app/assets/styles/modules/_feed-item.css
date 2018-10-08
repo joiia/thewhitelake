@@ -2,14 +2,19 @@
     position: relative;
     color: #fff;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     overflow: hidden;
     border-radius: 3px;
-    height: 440px;
+    height: 407px;
     transition: all .5s;
 
     &:hover {
         box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    @mixin atS {
+        height: 440px;
+        margin-bottom: 20px;
     }
 
     @mixin atXXL {
@@ -36,25 +41,20 @@
         }
 
         img {
-            width: 100% !important;
+            width: 120% !important;
             height: auto !important;
             max-width: 10000px;
 
             @mixin atXL {
-                height: 100% !important;
+                height: 120% !important;
                 width: auto !important;
 
             }
 
             @mixin atXXXL {
-                width: 100% !important;
+                width: 120% !important;
                 height: auto !important;
                 max-width: 1000px;
-            }
-
-            &.img--gorisontal {
-                height: 100% !important;
-                width: auto !important;
             }
         }
 
@@ -62,15 +62,31 @@
 
     &__text {
         position: absolute;
-        bottom: 64px;
+        bottom: 54px;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        padding: 0 45px;
+        padding: 0 15px;
+
+        @mixin atS {
+            bottom: 64px;
+        }
+
+        @mixin atL {
+            padding: 0 25px;
+        }
+        
+        @mixin atXL {
+            padding: 0 45px;
+        }
     }
 
     &__counters {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+
+        @mixin atS {
+            margin-bottom: 10px;
+        }
     }
 
     &__counter {
@@ -87,6 +103,8 @@
         }
     }
 
+
+
     &__label {
         background: $sandy;
         padding: 10px 15px;
@@ -101,41 +119,66 @@
     }
 
     &--l {
-        height: 900px;
+        height: 407px;
 
         .feed-item__text {
-            bottom: 75px;
+            bottom: 54px;
+
+            @mixin atS {
+                bottom: 75px;
+            }
         }
 
         .feed-item__counters {
             margin-bottom: 6px;
         }
 
-        img {
-            width: 100% !important;
-            height: auto !important;
-            max-width: 1000px;
+        .feed-item__title {
 
+            font-size: 25px !important;
+
+            @mixin atXL {
+                font-size: 50px !important;
+            }
+
+        }
+
+        img {
+            width: 120% !important;
+            height: auto !important;
+            max-width: 10000px;
+
+
+            @mixin atS {
+                width: 120% !important;
+                height: auto !important;
+                max-width: 1000px;
+            }
 
             @mixin atL {
-                height: 100% !important;
+                height: 120% !important;
                 width: auto !important;
             }
 
             @mixin atXXXL {
-                width: 100% !important;
+                width: 120% !important;
                 height: auto !important;
                 max-width: 1000px;
             }
 
         }
 
+        @mixin atS {
+            height: 440px;
+        }
+
+        @mixin atL {
+            height: 900px;
+        }
+
         @mixin atXXL {
             height: 960px;
         }
-
-
-
     }
 
 

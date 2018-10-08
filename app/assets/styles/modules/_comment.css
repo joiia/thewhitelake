@@ -1,18 +1,36 @@
 .comment {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
+    flex-direction: column;
+
+    @mixin atL {
+        flex-direction: row;
+        margin-bottom: 40px;
+
+    }
 
     &__userpic {
-        flex: 0 0 80px;
-        width: 80px;
-        height: 80px;
+        flex: 0 0 45px;
+        height: 45px;
+        width: 45px;
         overflow: hidden;
         border-radius: 50%;
+        margin-bottom: 12px;
+
+        @mixin atL {
+            flex: 0 0 80px;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 0;
+        }
     }
 
     &__container {
-        flex: 1 1 auto;
-        padding-left: 20px; 
+
+        @mixin atL {
+            flex: 1 1 auto;
+            padding-left: 20px; 
+        }
     }
 
     &__content {
@@ -40,7 +58,12 @@
 
     &--reply {
         margin-bottom: 0;
-        padding-top: 40px;
+        padding: 25px 15px 0 15px;
+
+        @mixin atL {
+            padding: 40px 0 0;
+
+        }
     }
 
     &:last-child {

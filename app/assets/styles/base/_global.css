@@ -1,8 +1,16 @@
 body {
     background: #fff;
-    margin: 40px;
+    margin: 10px;
     position: relative;
     font-family: $light;
+
+    @mixin atM {
+        margin: 10px 20px;
+    }
+
+    @mixin atL {
+        margin: 40px;
+    }
 }
 
 a, input {
@@ -43,8 +51,8 @@ h2 {
 
 h3 {
     font-family: $play;
-    line-height: 25px;
-    font-size: 28px;
+    line-height: 28px;
+    font-size: 25px;
 }
 
 quote, .su-quote-inner {
@@ -63,6 +71,16 @@ caption {
 .container-fluid {
     padding-right: 0;
     padding-left: 0;
+}
+
+.container {
+    padding-right: 0;
+    padding-left: 0;
+
+    @mixin atL {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 }
 
 .row {
@@ -107,6 +125,6 @@ h1, h2, h3 {
 }
 
 ::placeholder {
-  color: $grey-ll;
+    color: $grey-ll;
     opacity: 1 !important;
 }
