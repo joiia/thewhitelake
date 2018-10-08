@@ -1881,7 +1881,7 @@ input[type="month"] {
     transition: all .5s;
 }.btn--l {
         font-size: 22px;
-        line-height: 1;
+        line-height: 1.2;
         padding: 26px 35px;
         width: 600px;
         height: 80px;
@@ -2407,7 +2407,7 @@ input[type="month"] {
     font-size: 25px;
     line-height: 28px;
 
-}@media (min-width: 576px) {.headline {
+}@media (min-width: 992px) {.headline {
         font-size: 50px;
         line-height: 1
 

@@ -4,8 +4,7 @@
     font-size: 25px;
     line-height: 28px;
 
-
-    @mixin atS {
+    @mixin atL {
         font-size: 50px;
         line-height: 1;
     } 
